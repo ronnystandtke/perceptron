@@ -252,7 +252,6 @@ class Perceptron:
             self.setBackground('white', i)
 
     def addRow(self):
-        # TODO: constants for column names!
         new_row = pd.DataFrame({
             INPUT_1_COLUMN: [''],
             INPUT_2_COLUMN: [''],
