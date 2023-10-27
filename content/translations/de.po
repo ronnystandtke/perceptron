@@ -1,0 +1,131 @@
+# Jupyter Notebook for a Perceptron demo.
+# Copyright (C) 2023 Ronny Standtke <ronny.standtke@gmx.net>
+# This file is distributed under the same license as the Jupyter Perceptron package.
+# Ronny Standtke <ronny.standtke@gmx.net>, 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-27 18:37+0200\n"
+"PO-Revision-Date: 2023-10-27 15:55+0200\n"
+"Last-Translator: Ronny Standtke <ronny.standtke@gmx.net>\n"
+"Language-Team: DE <DE@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../Perceptron.py:54
+msgid ""
+"\n"
+"            <h1>Training</h1>\n"
+"            In this area the perceptron can be trained:\n"
+"            <ol>\n"
+"                <li>\n"
+"                    Select the checkboxes for the combinations you consider "
+"a\n"
+"                    nice day in the rightmost column.\n"
+"                </li>\n"
+"                <li>Press the start button to start the learning process.</"
+"li>\n"
+"                <li>\n"
+"                    Press the \"Finalize Epoch\" button to continue learning "
+"until\n"
+"                    the current epoch is finished.\n"
+"                </li>\n"
+"                <li>\n"
+"                    Press the \"Reset\" button to reset the learning "
+"process.\n"
+"                </li>\n"
+"            </ol>\n"
+"            "
+msgstr ""
+"\n"
+"            <h1>Training</h1>\n"
+"            In diesem Bereich kann das Perzeptron trainiert werden:\n"
+"            <ol>\n"
+"                <li>\n"
+"                    Wählen Sie in der rechten Spalte die Checkboxen für die Kombinationen, die Sie "
+"für schöne Tage halten.                 </li>\n"
+"                <li>Drücken Sie den Startknopf, um den Lernprozess zu "
+"starten.</li>\n"
+"                <li>\n"
+"                    Drücken Sie den Knopf \"Epoche abschließen\", um so "
+"lange zu lernen, bis die aktuelle Epoche abgeschlossen wurde.                "
+"</li>\n"
+"                <li>\n"
+"                    Drücken Sie den Knopf \"Zurücksetzen\", um den "
+"Lernprozess zurückzusetzen."
+"                </li>\n"
+"            </ol>\n"
+"            "
+
+#: ../Perceptron.py:82
+msgid "Weekend"
+msgstr "Wochenende"
+
+#: ../Perceptron.py:102
+msgid "Visiting Parents"
+msgstr "Eltern zu Besuch"
+
+#: ../Perceptron.py:122
+msgid "Nice Day"
+msgstr "Schöner Tag"
+
+#: ../Perceptron.py:139
+msgid "Learning Rate α:"
+msgstr "Lernrate α"
+
+#: ../Perceptron.py:147
+msgid "Finalize Epoch"
+msgstr "Epoche abschließen"
+
+#: ../Perceptron.py:151
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+#: ../Perceptron.py:164
+msgid ""
+"\n"
+"            <h1>Inference</h1>\n"
+"            In this area the perceptron can be used:\n"
+"            <ol>\n"
+"                <li>\n"
+"                    Change the selection of the two input checkboxes on the\n"
+"                    left hand side.\n"
+"                </li>\n"
+"                <li>Watch the result on the righthand side.</li>\n"
+"            </ol>\n"
+"            "
+msgstr ""
+"\n"
+"            <h1>Inferenz</h1>\n"
+"            In diesem Bereich kann das Perzeptron benutzt werden:\n"
+"            <ol>\n"
+"                <li>\n"
+"                    Ändern Sie die Auswahl der beiden Eingabe-Checkboxen auf der "
+"linken Seite.                 </li>\n"
+"                <li>Beobachten Sie das Ergebnis auf der rechten Seite.</li>\n"
+"            </ol>\n"
+"            "
+
+#: ../Perceptron.py:214
+msgid "Start (set random weights))"
+msgstr "Start (zufällige Gewichtungen setzen)"
+
+#: ../Perceptron.py:219
+msgid "Continue (get random input)"
+msgstr "Weiter (zufälligen Input holen)"
+
+#: ../Perceptron.py:221
+msgid "Continue (calculate result)"
+msgstr "Weiter (Ausgabe berechnen)"
+
+#: ../Perceptron.py:223
+msgid "Continue (adopt weights)"
+msgstr "Weiter (Gewichtungen anpassen)"
+
+#: ../Perceptron.py:271
+msgid "Epoch: "
+msgstr "Epoche: "

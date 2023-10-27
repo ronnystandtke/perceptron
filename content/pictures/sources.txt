@@ -1,0 +1,8 @@
+weekend:
+https://openclipart.org/detail/304826/calendar-icon
+
+parents:
+https://openclipart.org/detail/302663/smiling-couple 
+
+happy:
+https://openclipart.org/detail/279689/smiley-face-yellow
