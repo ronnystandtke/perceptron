@@ -53,3 +53,5 @@ jupyterlab-language-pack-de-DE
 # pin v8.0.5, ipywidgets v8.0.6 broke our application...
 ipywidgets==8.0.5
 pandas
+# jinja2 is an optional dependency of pandas for DataFrame.style
+jinja2
