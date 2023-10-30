@@ -11,4 +11,5 @@ See the --> [this Wikipedia article](https://en.wikipedia.org/wiki/Perceptron) <
 
 ## Requirements
 
+- Firefox 90+
 - Chromium 89+
