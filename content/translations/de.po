@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 18:37+0200\n"
+"POT-Creation-Date: 2023-10-30 21:43+0100\n"
 "PO-Revision-Date: 2023-10-27 15:55+0200\n"
 "Last-Translator: Ronny Standtke <ronny.standtke@gmx.net>\n"
 "Language-Team: DE <DE@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Perceptron.py:54
+#: ../Perceptron.py:52
 msgid ""
 "\n"
 "            <h1>Training</h1>\n"
@@ -46,8 +46,8 @@ msgstr ""
 "            In diesem Bereich kann das Perzeptron trainiert werden:\n"
 "            <ol>\n"
 "                <li>\n"
-"                    Wählen Sie in der rechten Spalte die Checkboxen für die Kombinationen, die Sie "
-"für schöne Tage halten.                 </li>\n"
+"                    Wählen Sie in der rechten Spalte die Checkboxen für die "
+"Kombinationen, die Sie für schöne Tage halten.                 </li>\n"
 "                <li>Drücken Sie den Startknopf, um den Lernprozess zu "
 "starten.</li>\n"
 "                <li>\n"
@@ -56,36 +56,35 @@ msgstr ""
 "</li>\n"
 "                <li>\n"
 "                    Drücken Sie den Knopf \"Zurücksetzen\", um den "
-"Lernprozess zurückzusetzen."
-"                </li>\n"
+"Lernprozess zurückzusetzen.                </li>\n"
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:82
+#: ../Perceptron.py:80
 msgid "Weekend"
 msgstr "Wochenende"
 
-#: ../Perceptron.py:102
+#: ../Perceptron.py:100
 msgid "Visiting Parents"
 msgstr "Eltern zu Besuch"
 
-#: ../Perceptron.py:122
+#: ../Perceptron.py:120
 msgid "Nice Day"
 msgstr "Schöner Tag"
 
-#: ../Perceptron.py:139
+#: ../Perceptron.py:137
 msgid "Learning Rate α:"
 msgstr "Lernrate α"
 
-#: ../Perceptron.py:147
+#: ../Perceptron.py:145
 msgid "Finalize Epoch"
 msgstr "Epoche abschließen"
 
-#: ../Perceptron.py:151
+#: ../Perceptron.py:149
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: ../Perceptron.py:164
+#: ../Perceptron.py:163
 msgid ""
 "\n"
 "            <h1>Inference</h1>\n"
@@ -104,28 +103,64 @@ msgstr ""
 "            In diesem Bereich kann das Perzeptron benutzt werden:\n"
 "            <ol>\n"
 "                <li>\n"
-"                    Ändern Sie die Auswahl der beiden Eingabe-Checkboxen auf der "
-"linken Seite.                 </li>\n"
+"                    Ändern Sie die Auswahl der beiden Eingabe-Checkboxen auf "
+"der linken Seite.                 </li>\n"
 "                <li>Beobachten Sie das Ergebnis auf der rechten Seite.</li>\n"
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:214
+#: ../Perceptron.py:220
 msgid "Start (set random weights))"
 msgstr "Start (zufällige Gewichtungen setzen)"
 
-#: ../Perceptron.py:219
+#: ../Perceptron.py:225
 msgid "Continue (get random input)"
 msgstr "Weiter (zufälligen Input holen)"
 
-#: ../Perceptron.py:221
+#: ../Perceptron.py:227
 msgid "Continue (calculate result)"
 msgstr "Weiter (Ausgabe berechnen)"
 
-#: ../Perceptron.py:223
+#: ../Perceptron.py:229
 msgid "Continue (adopt weights)"
 msgstr "Weiter (Gewichtungen anpassen)"
 
-#: ../Perceptron.py:271
+#: ../Perceptron.py:276 ../Perceptron.py:424
 msgid "Epoch: "
 msgstr "Epoche: "
+
+#: ../temp.py:50
+msgid ""
+"\n"
+"                <h1>Startup failed</h1>\n"
+"                The startup of this notebook has failed. A known cause for "
+"this\n"
+"                error is starting the notebook in Firefox in private mode.\n"
+"                Please try again in a new Firefox window in normal mode. "
+"More\n"
+"                background information about this problem can be found "
+"here:\n"
+"                <br>\n"
+"                <a href=\"https://jupyterlite.readthedocs.io/en/latest/"
+"howto/\n"
+"                configure/advanced/service-worker.html\">\n"
+"                https://jupyterlite.readthedocs.io/en/latest/howto/"
+"configure/\n"
+"                advanced/service-worker.html</a>\n"
+"                "
+msgstr ""
+"\n"
+"                <h1>Start fehlgeschlagen</h1>\n"
+"                Der Start dieses Notebooks ist fehlgeschlagen. Eine bekannte"
+"                Ursache für diesen Fehler ist der Start des Notebooks in"
+"                Firefox im privaten Modus. Bitte versuchen Sie es noch einmal"
+"                in einem neuen Firefox-Fenster im normalen Modus. Weitere"
+"                Hintergrundinformationen zu diesem Problem sind hier zu"
+"                finden:<br>"
+"                <a href=\"https://jupyterlite.readthedocs.io/en/latest/"
+"howto/\n"
+"                configure/advanced/service-worker.html\">\n"
+"                https://jupyterlite.readthedocs.io/en/latest/howto/"
+"configure/\n"
+"                advanced/service-worker.html</a>\n"
+"                "
