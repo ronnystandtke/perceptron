@@ -376,10 +376,23 @@ class Perceptron:
                 range(1, len(self.trainingProtocol) + 1))
             coloredProtocol = self.trainingProtocol.tail(8).style.apply(
                 highlightProtocol, axis='columns')
+            # Rendering in JupyterLab is very smooth. Unfortunately, in
+            # JupyterLite the screen flickers and the data frame fills the
+            # whole screen width. Therefore we manually set the column widths
+            # here.
+            # startof JupyterLite workaround
+            coloredProtocol.set_properties(
+                subset=[INPUT_1_COLUMN, INPUT_2_COLUMN, TARGET_COLUMN,
+                        OUTPUT_COLUMN, DELTA_COLUMN],
+                **{'width': '20px'})
+            coloredProtocol.set_properties(
+                subset=[WEIGHT_0_COLUMN, WEIGHT_1_COLUMN, WEIGHT_2_COLUMN],
+                **{'width': '60px'})
+            # endof JupyterLite workaround
+
             self.protocolOutput.clear_output(wait=True)
             with self.protocolOutput:
                 display(coloredProtocol)
-                # display(widgets.Button(description="test me"))
 
     def updateTargetCheckbox(self):
         inputs = [1,
