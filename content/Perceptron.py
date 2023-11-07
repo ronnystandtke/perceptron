@@ -72,8 +72,13 @@ class Perceptron:
         # we don't need the empty description label in front of the checkboxes
         checkBoxStyle = {'description_width': '0px'}
         checkBoxLayout = Layout(width="fit-content")
-        vBoxLayout = Layout(flex='0 0 auto', width="fit-content",
-                            margin="0px 30px 0px 0px", align_items="center")
+        vBoxLayout = Layout(
+            flex='0 0 auto', width="fit-content", margin="0px 30px 0px 0px",
+            align_items="center")
+        targetLayout = Layout(
+            flex='0 0 auto', width="fit-content", margin="0px 30px 0px 0px",
+            align_items="center", border_left="1px solid",
+            padding="0px 0px 0px 30px")
 
         inputImage1 = widgets.Image(
             value=open("pictures/weekend.png", "rb").read(), width=100)
@@ -117,7 +122,7 @@ class Perceptron:
 
         targetImage = widgets.Image(
             value=open("pictures/happy.png", "rb").read(), width=100)
-        targetLabel = widgets.Label(value=_("Nice Day"))
+        targetLabel = widgets.Label(value=_("Nice Day?"))
         self.targetCheckBoxA = widgets.Checkbox(
             style=checkBoxStyle, layout=checkBoxLayout, value=False)
         self.targetCheckBoxB = widgets.Checkbox(
@@ -129,7 +134,7 @@ class Perceptron:
         targetVBox = widgets.VBox([targetImage, targetLabel,
                                    self.targetCheckBoxA, self.targetCheckBoxB,
                                    self.targetCheckBoxC, self.targetCheckBoxD])
-        targetVBox.layout = vBoxLayout
+        targetVBox.layout = targetLayout
 
         targetsBox = widgets.HBox([input1VBox, input2VBox, targetVBox])
 
@@ -189,7 +194,7 @@ class Perceptron:
             disabled=True, style=checkBoxStyle, layout=checkBoxLayout)
         targetVBox = widgets.VBox(
             [targetImage, targetLabel, self.targetCheckBox])
-        targetVBox.layout = vBoxLayout
+        targetVBox.layout = targetLayout
 
         trainingBox = widgets.VBox(
             [trainingHeader, targetsBox, self.alphaText,

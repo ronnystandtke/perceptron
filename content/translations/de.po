@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-30 22:08+0100\n"
+"POT-Creation-Date: 2023-11-07 22:04+0100\n"
 "PO-Revision-Date: 2023-10-27 15:55+0200\n"
 "Last-Translator: Ronny Standtke <ronny.standtke@gmx.net>\n"
 "Language-Team: DE <DE@li.org>\n"
@@ -60,31 +60,31 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:80
+#: ../Perceptron.py:85
 msgid "Weekend"
 msgstr "Wochenende"
 
-#: ../Perceptron.py:100
+#: ../Perceptron.py:105
 msgid "Visiting Parents"
 msgstr "Eltern zu Besuch"
 
-#: ../Perceptron.py:120
-msgid "Nice Day"
-msgstr "Schöner Tag"
+#: ../Perceptron.py:125
+msgid "Nice Day?"
+msgstr "Schöner Tag?"
 
-#: ../Perceptron.py:137
+#: ../Perceptron.py:142
 msgid "Learning Rate α:"
 msgstr "Lernrate α"
 
-#: ../Perceptron.py:145
+#: ../Perceptron.py:150
 msgid "Finalize Epoch"
 msgstr "Epoche abschließen"
 
-#: ../Perceptron.py:149
+#: ../Perceptron.py:154
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: ../Perceptron.py:163
+#: ../Perceptron.py:168
 msgid ""
 "\n"
 "            <h1>Inference</h1>\n"
@@ -109,27 +109,27 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:220
+#: ../Perceptron.py:225
 msgid "Start (set random weights))"
 msgstr "Start (zufällige Gewichtungen setzen)"
 
-#: ../Perceptron.py:225
+#: ../Perceptron.py:230
 msgid "Continue (get random input)"
 msgstr "Weiter (zufälligen Input holen)"
 
-#: ../Perceptron.py:227
+#: ../Perceptron.py:232
 msgid "Continue (calculate result)"
 msgstr "Weiter (Ausgabe berechnen)"
 
-#: ../Perceptron.py:229
+#: ../Perceptron.py:234
 msgid "Continue (adopt weights)"
 msgstr "Weiter (Gewichtungen anpassen)"
 
-#: ../Perceptron.py:276 ../Perceptron.py:424
+#: ../Perceptron.py:281 ../Perceptron.py:429
 msgid "Epoch: "
 msgstr "Epoche: "
 
-#: ../temp.py:50
+#: ../temp.py:52
 msgid ""
 "\n"
 "                <h1>Startup failed</h1>\n"
@@ -154,8 +154,7 @@ msgstr ""
 "Notebooks in                Firefox im privaten Modus. Bitte versuchen Sie "
 "es noch einmal                in einem neuen Firefox-Fenster im normalen "
 "Modus. Weitere                Hintergrundinformationen zu diesem Problem "
-"sind hier zu                finden:"
-"                <br>\n"
+"sind hier zu                finden:                <br>\n"
 "                <a href=\"https://jupyterlite.readthedocs.io/en/latest/howto/"
 "configure/advanced/service-worker.html\" target=\"_blank\">\n"
 "                https://jupyterlite.readthedocs.io/en/latest/howto/configure/"
