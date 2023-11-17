@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 20:59+0100\n"
+"POT-Creation-Date: 2023-11-17 21:22+0100\n"
 "PO-Revision-Date: 2023-10-27 15:55+0200\n"
 "Last-Translator: Ronny Standtke <ronny.standtke@gmx.net>\n"
 "Language-Team: DE <DE@li.org>\n"
@@ -148,9 +148,9 @@ msgstr ""
 #: ../Perceptron.py:105
 msgid ""
 "\n"
-"            <p>The simplified model of a biological nerve cell described "
-"above\n"
-"            can now be converted into a mathematical model:</p>\n"
+"            <p>The simplified model of a biological neuron described above "
+"can\n"
+"            now be converted into a mathematical model:</p>\n"
 "            "
 msgstr ""
 "\n"
@@ -317,7 +317,28 @@ msgstr ""
 "der Eingaben immer die gewünschte Ausgabe zu erzeugen.</p>\n"
 "            "
 
-#: ../Perceptron.py:196
+#: ../Perceptron.py:187
+msgid ""
+"\n"
+"            <p>To do this, we actually just have to set all the\n"
+"            <span style=\"color:red\">weights</span> and the\n"
+"            <span style=\"color:red\">threshold value</span> in our "
+"artificial\n"
+"            neuron appropriately:</p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>Dazu müssen wir eigentlich nur alle "
+"<span style=\"color:red\">Gewichtungen</span> und den "
+"<span style=\"color:red\">Schwellenwert</span> in unserer künstlichen "
+"Nervenzelle passend einstellen:</p>\n"
+"            "
+
+#: ../Perceptron.py:195
+msgid "simple_neuron_en.png"
+msgstr "simple_neuron_de.png"
+
+#: ../Perceptron.py:207
 msgid ""
 "\n"
 "            <h1>Training</h1>\n"
@@ -361,31 +382,31 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:229
+#: ../Perceptron.py:240
 msgid "Weekend"
 msgstr "Wochenende"
 
-#: ../Perceptron.py:249
+#: ../Perceptron.py:260
 msgid "Visiting Parents"
 msgstr "Eltern zu Besuch"
 
-#: ../Perceptron.py:269
+#: ../Perceptron.py:280
 msgid "Nice Day?"
 msgstr "Schöner Tag?"
 
-#: ../Perceptron.py:286
+#: ../Perceptron.py:297
 msgid "Learning Rate α:"
 msgstr "Lernrate α"
 
-#: ../Perceptron.py:294
+#: ../Perceptron.py:305
 msgid "Finalize Epoch"
 msgstr "Epoche abschließen"
 
-#: ../Perceptron.py:298
+#: ../Perceptron.py:309
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: ../Perceptron.py:312
+#: ../Perceptron.py:323
 msgid ""
 "\n"
 "            <h1>Inference</h1>\n"
@@ -410,23 +431,23 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:369
+#: ../Perceptron.py:380
 msgid "Start (set random weights))"
 msgstr "Start (zufällige Gewichtungen setzen)"
 
-#: ../Perceptron.py:374
+#: ../Perceptron.py:385
 msgid "Continue (get random input)"
 msgstr "Weiter (zufälligen Input holen)"
 
-#: ../Perceptron.py:376
+#: ../Perceptron.py:387
 msgid "Continue (calculate result)"
 msgstr "Weiter (Ausgabe berechnen)"
 
-#: ../Perceptron.py:378
+#: ../Perceptron.py:389
 msgid "Continue (adopt weights)"
 msgstr "Weiter (Gewichtungen anpassen)"
 
-#: ../Perceptron.py:425 ../Perceptron.py:573
+#: ../Perceptron.py:436 ../Perceptron.py:584
 msgid "Epoch: "
 msgstr "Epoche: "
 

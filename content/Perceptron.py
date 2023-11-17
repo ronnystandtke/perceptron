@@ -103,8 +103,8 @@ class Perceptron:
             learning and thinking abilities.</p>
             """) +
             _("""
-            <p>The simplified model of a biological nerve cell described above
-            can now be converted into a mathematical model:</p>
+            <p>The simplified model of a biological neuron described above can
+            now be converted into a mathematical model:</p>
             """) +
             _("<h2>Artificial neuron</h2>")
         )
@@ -183,12 +183,23 @@ class Perceptron:
             with explicit commands, but rather teach an artificial neuron to
             always generate the desired output for all possible variations of
             the inputs.</p>
+            """) +
+            _("""
+            <p>To do this, we actually just have to set all the
+            <span style="color:red">weights</span> and the
+            <span style="color:red">threshold value</span> in our artificial
+            neuron appropriately:</p>
             """)
         )
 
+        imagePath = "pictures/" + _("simple_neuron_en.png")
+        simpleNeuronImage = widgets.Image(
+            value=open(imagePath, "rb").read(), width=600)
+
         theoryBox = widgets.VBox([
             theory1, neuronImage, theory2, artificialNeuronImage, theory3,
-            goodDayEmptyImage, theory4, goodDayExampleImage, theory5
+            goodDayEmptyImage, theory4, goodDayExampleImage, theory5,
+            simpleNeuronImage
         ])
 
         # create GUI elements for training
