@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 19:50+0100\n"
+"POT-Creation-Date: 2023-11-17 20:59+0100\n"
 "PO-Revision-Date: 2023-10-27 15:55+0200\n"
 "Last-Translator: Ronny Standtke <ronny.standtke@gmx.net>\n"
 "Language-Team: DE <DE@li.org>\n"
@@ -17,9 +17,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../Perceptron.py:52
+msgid "<h1>Theory</h1>"
+msgstr "<h1>Theorie</h1>"
+
+#: ../Perceptron.py:53
+msgid "<h2>Why machine learning?</h2>"
+msgstr "<h2>Warum maschinelles Lernen?</h2>"
+
+#: ../Perceptron.py:54
 msgid ""
 "\n"
-"            <h1>Theory</h1>\n"
 "            <p>In the past, we typically used a programming language such as "
 "C,\n"
 "            Java or Python to solve problems with computers, using explicit\n"
@@ -37,7 +44,6 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            <h1>Theorie</h1>\n"
 "            <p>Um Aufgaben mit Computern zu lösen, haben wir in der "
 "Vergangenheit typischerweise eine Programmiersprache wie z.B. C, Java oder "
 "Python verwendet, um mit expliziten Befehlen die zur Lösung notwendigen "
@@ -49,7 +55,7 @@ msgstr ""
 "Spracherkennung, autonomem Fahren oder medizinischen Diagnosen.</p>\n"
 "            "
 
-#: ../Perceptron.py:64
+#: ../Perceptron.py:65
 msgid ""
 "\n"
 "            <p>In order to efficiently create solutions for these complex\n"
@@ -73,11 +79,15 @@ msgstr ""
 "die Funktionsweise einer biologischen Nervenzelle an:</p>\n"
 "            "
 
-#: ../Perceptron.py:77
+#: ../Perceptron.py:74
+msgid "<h2>Biological neuron</h2>"
+msgstr "<h2>Biologische Nervenzelle</h2>"
+
+#: ../Perceptron.py:79
 msgid "neuron_en.png"
 msgstr "neuron_de.png"
 
-#: ../Perceptron.py:82
+#: ../Perceptron.py:84
 msgid ""
 "\n"
 "            <p>In simple terms, biological neurons function by receiving "
@@ -121,7 +131,7 @@ msgstr ""
 "Muskelzellen) übertragen.</p>\n"
 "            "
 
-#: ../Perceptron.py:98
+#: ../Perceptron.py:100
 msgid ""
 "\n"
 "            <p>The almost 100 billion neurons in our human brain each have\n"
@@ -135,7 +145,7 @@ msgstr ""
 "so unsere herausragenden Lern- und Denkfähigkeiten.</p>\n"
 "            "
 
-#: ../Perceptron.py:103
+#: ../Perceptron.py:105
 msgid ""
 "\n"
 "            <p>The simplified model of a biological nerve cell described "
@@ -149,10 +159,14 @@ msgstr ""
 "            "
 
 #: ../Perceptron.py:109
+msgid "<h2>Artificial neuron</h2>"
+msgstr "<h2>Künstliche Nervenzelle</h2>"
+
+#: ../Perceptron.py:112
 msgid "artificial_neuron_en.png"
 msgstr "artificial_neuron_de.png"
 
-#: ../Perceptron.py:114
+#: ../Perceptron.py:117
 msgid ""
 "\n"
 "            <p>\n"
@@ -209,7 +223,7 @@ msgstr ""
 "            </p>\n"
 "            "
 
-#: ../Perceptron.py:140
+#: ../Perceptron.py:143
 msgid ""
 "\n"
 "            <p>But how does an artificial neuron \"learn\"? Let's try it "
@@ -218,11 +232,92 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            <p>Aber wie \"lernt\" jetzt so ein künstliches Neuron? Versuchen "
-"wir es an einem ganz einfachen Beispiel...</p>\n"
+"            <p>Aber wie \"lernt\" jetzt so eine künstliche Nervenzelle? "
+"Versuchen wir es an einem ganz einfachen Beispiel...</p>\n"
 "            "
 
-#: ../Perceptron.py:152
+#: ../Perceptron.py:147
+msgid "<h2>Example</h2>"
+msgstr "<h2>Beispiel</h2>"
+
+#: ../Perceptron.py:148
+msgid ""
+"\n"
+"            <p>In our example, there should be exactly two inputs, each of "
+"which\n"
+"            can only accept truth values (i.e. \"true\" or \"false\"). The "
+"two\n"
+"            inputs are:\n"
+"            <ul>\n"
+"                <li>It is weekend.</li>\n"
+"                <li>Parents come to visit.</li>\n"
+"            </ul>\n"
+"            We want to use these two inputs to determine whether it is a "
+"good\n"
+"            day:</p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>In unserem Beispiel soll es genau zwei Eingaben geben, die "
+"jeweils nur Wahrheitswerte (also \"wahr\" oder \"falsch\") annehmen können. "
+"Die beiden Eingaben sind:            <ul>\n"
+"                <li>Es ist Wochenende.</li>\n"
+"                <li>Die Eltern kommen zu Besuch.</li>\n"
+"            </ul>\n"
+"            Mit diesen beiden Eingaben wollen wir bestimmen, ob ein guter "
+"Tag ist:</p>\n"
+"            "
+
+#: ../Perceptron.py:161
+msgid "good_day_empty_en.png"
+msgstr "good_day_empty_de.png"
+
+#: ../Perceptron.py:166
+msgid ""
+"\n"
+"            <p>As you can easily imagine, the answer to this question is "
+"very\n"
+"            individual. Let's assume we are looking at the situation for a\n"
+"            person for whom it is always a good day when it is weekend or\n"
+"            their parents are visiting, or both:</p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>Wie man sich leicht denken kann, ist die Antwort auf diese "
+"Frage sehr individuell. Nehmen wir an, wir betrachten die Situation für "
+"einen Menschen, für den immer dann ein guter Tag ist, wenn Wochenende ist "
+"oder die Eltern zu Besuch sind, oder beides zutrifft:</p>\n"
+"            "
+
+#: ../Perceptron.py:174
+msgid "good_day_example_en.png"
+msgstr "good_day_example_de.png"
+
+#: ../Perceptron.py:179
+msgid ""
+"\n"
+"            <p>If you have ever programmed before, you will most likely\n"
+"            immediately see that we are dealing with an OR operation of the "
+"two\n"
+"            inputs. But for once, we do <em>NOT</em> want to solve this "
+"task\n"
+"            with explicit commands, but rather teach an artificial neuron "
+"to\n"
+"            always generate the desired output for all possible variations "
+"of\n"
+"            the inputs.</p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>Wenn Sie schon einmal programmiert haben, werden Sie "
+"höchstwahrscheinlich sofort sehen, dass wir es hier mit einer ODER-"
+"Verknüpfung der beiden Eingänge zu tun haben. Aber wir wollen diese Aufgabe "
+"ausnahmsweise einmal <em>NICHT</em> mit expliziten Befehlen lösen, sondern "
+"einer künstlichen Nervenzelle beibringen, bei allen möglichen Variationen "
+"der Eingaben immer die gewünschte Ausgabe zu erzeugen.</p>\n"
+"            "
+
+#: ../Perceptron.py:196
 msgid ""
 "\n"
 "            <h1>Training</h1>\n"
@@ -266,31 +361,31 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:185
+#: ../Perceptron.py:229
 msgid "Weekend"
 msgstr "Wochenende"
 
-#: ../Perceptron.py:205
+#: ../Perceptron.py:249
 msgid "Visiting Parents"
 msgstr "Eltern zu Besuch"
 
-#: ../Perceptron.py:225
+#: ../Perceptron.py:269
 msgid "Nice Day?"
 msgstr "Schöner Tag?"
 
-#: ../Perceptron.py:242
+#: ../Perceptron.py:286
 msgid "Learning Rate α:"
 msgstr "Lernrate α"
 
-#: ../Perceptron.py:250
+#: ../Perceptron.py:294
 msgid "Finalize Epoch"
 msgstr "Epoche abschließen"
 
-#: ../Perceptron.py:254
+#: ../Perceptron.py:298
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: ../Perceptron.py:268
+#: ../Perceptron.py:312
 msgid ""
 "\n"
 "            <h1>Inference</h1>\n"
@@ -315,23 +410,23 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:325
+#: ../Perceptron.py:369
 msgid "Start (set random weights))"
 msgstr "Start (zufällige Gewichtungen setzen)"
 
-#: ../Perceptron.py:330
+#: ../Perceptron.py:374
 msgid "Continue (get random input)"
 msgstr "Weiter (zufälligen Input holen)"
 
-#: ../Perceptron.py:332
+#: ../Perceptron.py:376
 msgid "Continue (calculate result)"
 msgstr "Weiter (Ausgabe berechnen)"
 
-#: ../Perceptron.py:334
+#: ../Perceptron.py:378
 msgid "Continue (adopt weights)"
 msgstr "Weiter (Gewichtungen anpassen)"
 
-#: ../Perceptron.py:381 ../Perceptron.py:529
+#: ../Perceptron.py:425 ../Perceptron.py:573
 msgid "Epoch: "
 msgstr "Epoche: "
 

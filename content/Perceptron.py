@@ -49,8 +49,9 @@ class Perceptron:
 
         # create GUI elements for theoretical input
         theory1 = widgets.HTML(
+            _("<h1>Theory</h1>") +
+            _("<h2>Why machine learning?</h2>") +
             _("""
-            <h1>Theory</h1>
             <p>In the past, we typically used a programming language such as C,
             Java or Python to solve problems with computers, using explicit
             commands to create the data structures, algorithms, functions and
@@ -69,7 +70,8 @@ class Perceptron:
             brain with its network of neurons. In order to understand the
             mathematical model based on this, let's first take a look at how a
             biological neuron works:</p>
-            """)
+            """) +
+            _("<h2>Biological neuron</h2>")
         )
 
         # The HTML widget from ipywidgets can't resolve relative file names.
@@ -103,7 +105,8 @@ class Perceptron:
             _("""
             <p>The simplified model of a biological nerve cell described above
             can now be converted into a mathematical model:</p>
-            """)
+            """) +
+            _("<h2>Artificial neuron</h2>")
         )
 
         imagePath = "pictures/" + _("artificial_neuron_en.png")
@@ -140,12 +143,53 @@ class Perceptron:
             _("""
             <p>But how does an artificial neuron "learn"? Let's try it with a
             very simple example...</p>
+            """) +
+            _("<h2>Example</h2>") +
+            _("""
+            <p>In our example, there should be exactly two inputs, each of which
+            can only accept truth values (i.e. "true" or "false"). The two
+            inputs are:
+            <ul>
+                <li>It is weekend.</li>
+                <li>Parents come to visit.</li>
+            </ul>
+            We want to use these two inputs to determine whether it is a good
+            day:</p>
             """)
-
         )
 
-        theoryBox = widgets.VBox([theory1, neuronImage, theory2,
-                                  artificialNeuronImage, theory3])
+        imagePath = "pictures/" + _("good_day_empty_en.png")
+        goodDayEmptyImage = widgets.Image(
+            value=open(imagePath, "rb").read(), width=550)
+
+        theory4 = widgets.HTML(
+            _("""
+            <p>As you can easily imagine, the answer to this question is very
+            individual. Let's assume we are looking at the situation for a
+            person for whom it is always a good day when it is weekend or
+            their parents are visiting, or both:</p>
+            """)
+        )
+
+        imagePath = "pictures/" + _("good_day_example_en.png")
+        goodDayExampleImage = widgets.Image(
+            value=open(imagePath, "rb").read(), width=550)
+
+        theory5 = widgets.HTML(
+            _("""
+            <p>If you have ever programmed before, you will most likely
+            immediately see that we are dealing with an OR operation of the two
+            inputs. But for once, we do <em>NOT</em> want to solve this task
+            with explicit commands, but rather teach an artificial neuron to
+            always generate the desired output for all possible variations of
+            the inputs.</p>
+            """)
+        )
+
+        theoryBox = widgets.VBox([
+            theory1, neuronImage, theory2, artificialNeuronImage, theory3,
+            goodDayEmptyImage, theory4, goodDayExampleImage, theory5
+        ])
 
         # create GUI elements for training
         trainingHeader = widgets.HTML(_(
