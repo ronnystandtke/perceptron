@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 15:36+0100\n"
+"POT-Creation-Date: 2023-11-17 19:50+0100\n"
 "PO-Revision-Date: 2023-10-27 15:55+0200\n"
 "Last-Translator: Ronny Standtke <ronny.standtke@gmx.net>\n"
 "Language-Team: DE <DE@li.org>\n"
@@ -37,9 +37,9 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            <h1>Theory</h1>\n"
+"            <h1>Theorie</h1>\n"
 "            <p>Um Aufgaben mit Computern zu lösen, haben wir in der "
-"Vergangenheit typischerweise eine Programmiersprache wie z.B. C, Java oder"
+"Vergangenheit typischerweise eine Programmiersprache wie z.B. C, Java oder "
 "Python verwendet, um mit expliziten Befehlen die zur Lösung notwendigen "
 "Datenstrukturen, Algorithmen, Funktionen und schlussendlich ausführbaren "
 "Programme zu erstellen. Mit dieser Herangehensweise lassen sich in vielen "
@@ -73,7 +73,11 @@ msgstr ""
 "die Funktionsweise einer biologischen Nervenzelle an:</p>\n"
 "            "
 
-#: ../Perceptron.py:81
+#: ../Perceptron.py:77
+msgid "neuron_en.png"
+msgstr "neuron_de.png"
+
+#: ../Perceptron.py:82
 msgid ""
 "\n"
 "            <p>In simple terms, biological neurons function by receiving "
@@ -117,7 +121,7 @@ msgstr ""
 "Muskelzellen) übertragen.</p>\n"
 "            "
 
-#: ../Perceptron.py:97
+#: ../Perceptron.py:98
 msgid ""
 "\n"
 "            <p>The almost 100 billion neurons in our human brain each have\n"
@@ -127,11 +131,11 @@ msgid ""
 msgstr ""
 "\n"
 "            <p>Die knapp 100 Milliarden Nervenzellen in unserem menschlichen "
-"Gehirn verfügen jeweils über ungefähr 10.000 Dendriten und ermöglichen "
-"uns so unsere herausragenden Lern- und Denkfähigkeiten.</p>\n"
+"Gehirn verfügen jeweils über ungefähr 10.000 Dendriten und ermöglichen uns "
+"so unsere herausragenden Lern- und Denkfähigkeiten.</p>\n"
 "            "
 
-#: ../Perceptron.py:102
+#: ../Perceptron.py:103
 msgid ""
 "\n"
 "            <p>The simplified model of a biological nerve cell described "
@@ -144,7 +148,11 @@ msgstr ""
 "Nervenzelle kann nun in ein mathematisches Modell überführt werden:</p>\n"
 "            "
 
-#: ../Perceptron.py:113
+#: ../Perceptron.py:109
+msgid "artificial_neuron_en.png"
+msgstr "artificial_neuron_de.png"
+
+#: ../Perceptron.py:114
 msgid ""
 "\n"
 "            <p>\n"
@@ -183,26 +191,25 @@ msgstr ""
 "                    x<sub>n</sub>\n"
 "                </li>\n"
 "                <li>\n"
-"                    die Nähe der Dentriten zum Axon wird durch die "
-"                    jeweiligen Gewichtungen w<sub>1</sub> to w<sub>n</sub> "
-"                    angegeben"
-"                </li>\n"
+"                    die Nähe der Dentriten zum Axon wird durch "
+"die                     jeweiligen Gewichtungen w<sub>1</sub> to w<sub>n</"
+"sub>                     angegeben                </li>\n"
 "                <li>\n"
-"                    die Aufsummierung der empfangenen elektrischen Impulse im "
-"                    Zellkörper wird in der Übertragungsfunktion abgebildet"
-"                </li>\n"
+"                    die Aufsummierung der empfangenen elektrischen Impulse "
+"im                     Zellkörper wird in der Übertragungsfunktion "
+"abgebildet                </li>\n"
 "                <li>\n"
-"                    das Aktionspotenzial wird im Schwellenwert &theta; hinterlegt "
-"                </li>\n"
+"                    das Aktionspotenzial wird im Schwellenwert &theta; "
+"hinterlegt                 </li>\n"
 "                <li>\n"
-"                    das Alles-oder-nichts-Prinzip wird durch die "
-"                    Aktivierungsfunktion abgebildet"
-"                </li>\n"
+"                    das Alles-oder-nichts-Prinzip wird durch "
+"die                     Aktivierungsfunktion abgebildet                </"
+"li>\n"
 "            </ul>\n"
 "            </p>\n"
 "            "
 
-#: ../Perceptron.py:139
+#: ../Perceptron.py:140
 msgid ""
 "\n"
 "            <p>But how does an artificial neuron \"learn\"? Let's try it "
@@ -215,7 +222,7 @@ msgstr ""
 "wir es an einem ganz einfachen Beispiel...</p>\n"
 "            "
 
-#: ../Perceptron.py:151
+#: ../Perceptron.py:152
 msgid ""
 "\n"
 "            <h1>Training</h1>\n"
@@ -259,31 +266,31 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:184
+#: ../Perceptron.py:185
 msgid "Weekend"
 msgstr "Wochenende"
 
-#: ../Perceptron.py:204
+#: ../Perceptron.py:205
 msgid "Visiting Parents"
 msgstr "Eltern zu Besuch"
 
-#: ../Perceptron.py:224
+#: ../Perceptron.py:225
 msgid "Nice Day?"
 msgstr "Schöner Tag?"
 
-#: ../Perceptron.py:241
+#: ../Perceptron.py:242
 msgid "Learning Rate α:"
 msgstr "Lernrate α"
 
-#: ../Perceptron.py:249
+#: ../Perceptron.py:250
 msgid "Finalize Epoch"
 msgstr "Epoche abschließen"
 
-#: ../Perceptron.py:253
+#: ../Perceptron.py:254
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: ../Perceptron.py:267
+#: ../Perceptron.py:268
 msgid ""
 "\n"
 "            <h1>Inference</h1>\n"
@@ -308,23 +315,23 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:324
+#: ../Perceptron.py:325
 msgid "Start (set random weights))"
 msgstr "Start (zufällige Gewichtungen setzen)"
 
-#: ../Perceptron.py:329
+#: ../Perceptron.py:330
 msgid "Continue (get random input)"
 msgstr "Weiter (zufälligen Input holen)"
 
-#: ../Perceptron.py:331
+#: ../Perceptron.py:332
 msgid "Continue (calculate result)"
 msgstr "Weiter (Ausgabe berechnen)"
 
-#: ../Perceptron.py:333
+#: ../Perceptron.py:334
 msgid "Continue (adopt weights)"
 msgstr "Weiter (Gewichtungen anpassen)"
 
-#: ../Perceptron.py:380 ../Perceptron.py:528
+#: ../Perceptron.py:381 ../Perceptron.py:529
 msgid "Epoch: "
 msgstr "Epoche: "
 

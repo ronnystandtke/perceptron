@@ -74,8 +74,9 @@ class Perceptron:
 
         # The HTML widget from ipywidgets can't resolve relative file names.
         # Therefore we use the Image widget here in between.
+        imagePath = "pictures/" + _("neuron_en.png")
         neuronImage = widgets.Image(
-            value=open("pictures/neuron_en.png", "rb").read(), width=400)
+            value=open(imagePath, "rb").read(), width=400)
 
         theory2 = widgets.HTML(
             _("""
@@ -105,9 +106,9 @@ class Perceptron:
             """)
         )
 
+        imagePath = "pictures/" + _("artificial_neuron_en.png")
         artificialNeuronImage = widgets.Image(
-            value=open("pictures/artificial_neuron_en.png", "rb").read(),
-            width=600)
+            value=open(imagePath, "rb").read(), width=600)
 
         theory3 = widgets.HTML(
             _("""
