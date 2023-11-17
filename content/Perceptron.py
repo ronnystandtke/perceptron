@@ -47,6 +47,105 @@ class Perceptron:
 
     def __init__(self):
 
+        # create GUI elements for theoretical input
+        theory1 = widgets.HTML(
+            _("""
+            <h1>Theory</h1>
+            <p>In the past, we typically used a programming language such as C,
+            Java or Python to solve problems with computers, using explicit
+            commands to create the data structures, algorithms, functions and
+            ultimately executable programs required for the solution. This
+            approach can be used to create excellent solutions in many areas.
+            However, in complex situations, such as large amounts of data or
+            dynamically changing environments, we reach the limits of
+            conventional programming, e.g. in speech recognition, autonomous
+            driving or medical diagnostics.</p>
+            """) +
+            _("""
+            <p>In order to efficiently create solutions for these complex
+            applications, the field of machine learning has established itself
+            as a supplement to traditional programming. As is so often the
+            case, the model for machine learning is taken from nature: the
+            brain with its network of neurons. In order to understand the
+            mathematical model based on this, let's first take a look at how a
+            biological neuron works:</p>
+            """)
+        )
+
+        # The HTML widget from ipywidgets can't resolve relative file names.
+        # Therefore we use the Image widget here in between.
+        neuronImage = widgets.Image(
+            value=open("pictures/neuron_en.png", "rb").read(), width=400)
+
+        theory2 = widgets.HTML(
+            _("""
+            <p>In simple terms, biological neurons function by receiving and
+            transmitting electrical impulses. Reception takes place via the
+            dentrites. The potentials of the electrical impulses received are
+            summed up in the cell body (soma). As soon as this sum exceeds a
+            certain threshold value, the action potential, the electrical
+            impulse is transmitted on the axon. This works according to the
+            all-or-nothing principle: as long as the action potential is not
+            reached, no impulse is transmitted at all; as soon as it is
+            reached, the impulse is transmitted. The closer a dendrite is to
+            the axon, the stronger the influence of its incoming impulse on the
+            action potential in the cell body. Its proximity to the axon
+            therefore influences the "weighting" of a dendrite. Transmitted
+            impulses are transferred to other cells (e.g. other neurons, gland
+            or muscle cells) at the axon terminals.</p>
+            """) +
+            _("""
+            <p>The almost 100 billion neurons in our human brain each have
+            around 10,000 dendrites, enabling us to perform our outstanding
+            learning and thinking abilities.</p>
+            """) +
+            _("""
+            <p>The simplified model of a biological nerve cell described above
+            can now be converted into a mathematical model:</p>
+            """)
+        )
+
+        artificialNeuronImage = widgets.Image(
+            value=open("pictures/artificial_neuron_en.png", "rb").read(),
+            width=600)
+
+        theory3 = widgets.HTML(
+            _("""
+            <p>
+            <ul>
+                <li>
+                    the dentrites become the inputs x<sub>1</sub> to
+                    x<sub>n</sub>
+                </li>
+                <li>
+                    the proximity of the dentrites to the axon is indicated by
+                    the respective weights w<sub>1</sub> to w<sub>n</sub>
+                </li>
+                <li>
+                    the summation of the received electrical impulses in the
+                    cell body is mapped in the transfer function
+                </li>
+                <li>
+                    the action potential is stored in the threshold value
+                    &theta;
+                </li>
+                <li>
+                    the all-or-nothing principle is represented by the
+                    activation function
+                </li>
+            </ul>
+            </p>
+            """) +
+            _("""
+            <p>But how does an artificial neuron "learn"? Let's try it with a
+            very simple example...</p>
+            """)
+
+        )
+
+        theoryBox = widgets.VBox([theory1, neuronImage, theory2,
+                                  artificialNeuronImage, theory3])
+
         # create GUI elements for training
         trainingHeader = widgets.HTML(_(
             """
@@ -59,8 +158,8 @@ class Perceptron:
                 </li>
                 <li>Press the start button to start the learning process.</li>
                 <li>
-                    Press the "Finalize Epoch" button to continue learning until
-                    the current epoch is finished.
+                    Press the "Finalize Epoch" button to continue learning
+                    until the current epoch is finished.
                 </li>
                 <li>
                     Press the "Reset" button to reset the learning process.
@@ -73,12 +172,12 @@ class Perceptron:
         checkBoxStyle = {'description_width': '0px'}
         checkBoxLayout = Layout(width="fit-content")
         vBoxLayout = Layout(
-            flex='0 0 auto', width="fit-content", margin="0px 30px 0px 0px",
-            align_items="center")
+            flex='0 0 auto', width="fit-content",
+            margin="0px 30px 0px 0px", align_items="center")
         targetLayout = Layout(
-            flex='0 0 auto', width="fit-content", margin="0px 30px 0px 0px",
-            align_items="center", border_left="1px solid",
-            padding="0px 0px 0px 30px")
+            flex='0 0 auto', width="fit-content",
+            margin="0px 30px 0px 0px", align_items="center",
+            border_left="1px solid", padding="0px 0px 0px 30px")
 
         inputImage1 = widgets.Image(
             value=open("pictures/weekend.png", "rb").read(), width=100)
@@ -204,7 +303,7 @@ class Perceptron:
             [inferenceHeader,
              widgets.HBox([input1VBox, input2VBox, targetVBox])])
 
-        self.GUI = widgets.VBox([trainingBox, inferenceBox])
+        self.GUI = widgets.VBox([theoryBox, trainingBox, inferenceBox])
 
         self.switchTo(Perceptron.State.START)
 
