@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 21:22+0100\n"
+"POT-Creation-Date: 2023-11-22 18:28+0100\n"
 "PO-Revision-Date: 2023-10-27 15:55+0200\n"
 "Last-Translator: Ronny Standtke <ronny.standtke@gmx.net>\n"
 "Language-Team: DE <DE@li.org>\n"
@@ -328,17 +328,82 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            <p>Dazu müssen wir eigentlich nur alle "
-"<span style=\"color:red\">Gewichtungen</span> und den "
-"<span style=\"color:red\">Schwellenwert</span> in unserer künstlichen "
-"Nervenzelle passend einstellen:</p>\n"
+"            <p>Dazu müssen wir eigentlich nur alle <span style=\"color:"
+"red\">Gewichtungen</span> und den <span style=\"color:red\">Schwellenwert</"
+"span> in unserer künstlichen Nervenzelle passend einstellen:</p>\n"
 "            "
 
 #: ../Perceptron.py:195
 msgid "simple_neuron_en.png"
 msgstr "simple_neuron_de.png"
 
-#: ../Perceptron.py:207
+#: ../Perceptron.py:200
+msgid ""
+"\n"
+"            <p>But how do you find the right values in a targeted and "
+"efficient\n"
+"            way? Or to put it another way: How does an artificial neuron "
+"\"learn\"?</p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>Aber wie findet man denn zielgerichtet und effizient die "
+"passenden Werte? Oder anders formuliert: Wie \"lernt\" ein künstliches "
+"Neuron?</p>\n"
+"            "
+
+#: ../Perceptron.py:204
+msgid ""
+"\n"
+"            <p>The learning process for an artificial neuron could look "
+"like\n"
+"            this, for example:\n"
+"            <ol>\n"
+"                <li>\n"
+"                    Choose random values for the weights and the threshold.\n"
+"                </li>\n"
+"                <li>Determine and check the result for selected inputs.</"
+"li>\n"
+"                <li>\n"
+"                    If the result is not as expected, adjust the weights "
+"and\n"
+"                    threshold in <span style=\"color:red\">a reasonable\n"
+"                    direction</span> and <span style=\"color:"
+"red\">dimension\n"
+"                    </span>. Jump back to point 2.\n"
+"                </li>\n"
+"                <li>Done, training successful.</li>\n"
+"            </ol>\n"
+"            </p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>Der Lernprozess bei einem künstlichen Neuron könnte zum "
+"Beispiel so aussehen: "
+"            <ol>\n"
+"                <li>\n"
+"                    Wähle zufällige Werte für die Gewichtungen und den "
+"Schwellenwert.\n"
+"                </li>\n"
+"                <li>Ermittle und überprüfe das Ergebnis für ausgewählte "
+"Eingaben.</li>\n"
+"                <li>\n"
+"                    Falls das Ergebnis nicht den Erwartungen entspricht, "
+"passe die Gewichtungen und den Schwellenwert in "
+"<span style=\"color:red\">eine sinnvolle Richtung</span> und "
+"<span style=\"color:red\">in geeigneter Dimension</span> an. Springe zurück "
+"zu Punkt 2.\n"
+"                </li>\n"
+"                <li>Fertig, Training erfolgreich.</li>\n"
+"            </ol>\n"
+"            </p>\n"
+"            "
+
+#: ../Perceptron.py:224
+msgid "learning_direction_and_dimension_en.png"
+msgstr "learning_direction_and_dimension_de.png"
+
+#: ../Perceptron.py:236
 msgid ""
 "\n"
 "            <h1>Training</h1>\n"
@@ -382,31 +447,31 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:240
+#: ../Perceptron.py:269
 msgid "Weekend"
 msgstr "Wochenende"
 
-#: ../Perceptron.py:260
+#: ../Perceptron.py:289
 msgid "Visiting Parents"
 msgstr "Eltern zu Besuch"
 
-#: ../Perceptron.py:280
+#: ../Perceptron.py:309
 msgid "Nice Day?"
 msgstr "Schöner Tag?"
 
-#: ../Perceptron.py:297
+#: ../Perceptron.py:326
 msgid "Learning Rate α:"
 msgstr "Lernrate α"
 
-#: ../Perceptron.py:305
+#: ../Perceptron.py:334
 msgid "Finalize Epoch"
 msgstr "Epoche abschließen"
 
-#: ../Perceptron.py:309
+#: ../Perceptron.py:338
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: ../Perceptron.py:323
+#: ../Perceptron.py:352
 msgid ""
 "\n"
 "            <h1>Inference</h1>\n"
@@ -431,23 +496,23 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:380
+#: ../Perceptron.py:409
 msgid "Start (set random weights))"
 msgstr "Start (zufällige Gewichtungen setzen)"
 
-#: ../Perceptron.py:385
+#: ../Perceptron.py:414
 msgid "Continue (get random input)"
 msgstr "Weiter (zufälligen Input holen)"
 
-#: ../Perceptron.py:387
+#: ../Perceptron.py:416
 msgid "Continue (calculate result)"
 msgstr "Weiter (Ausgabe berechnen)"
 
-#: ../Perceptron.py:389
+#: ../Perceptron.py:418
 msgid "Continue (adopt weights)"
 msgstr "Weiter (Gewichtungen anpassen)"
 
-#: ../Perceptron.py:436 ../Perceptron.py:584
+#: ../Perceptron.py:465 ../Perceptron.py:613
 msgid "Epoch: "
 msgstr "Epoche: "
 

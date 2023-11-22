@@ -196,10 +196,39 @@ class Perceptron:
         simpleNeuronImage = widgets.Image(
             value=open(imagePath, "rb").read(), width=600)
 
+        theory6 = widgets.HTML(
+            _("""
+            <p>But how do you find the right values in a targeted and efficient
+            way? Or to put it another way: How does an artificial neuron "learn"?</p>
+            """) +
+            _("""
+            <p>The learning process for an artificial neuron could look like
+            this, for example:
+            <ol>
+                <li>
+                    Choose random values for the weights and the threshold.
+                </li>
+                <li>Determine and check the result for selected inputs.</li>
+                <li>
+                    If the result is not as expected, adjust the weights and
+                    threshold in <span style="color:red">a reasonable
+                    direction</span> and <span style="color:red">dimension
+                    </span>. Jump back to point 2.
+                </li>
+                <li>Done, training successful.</li>
+            </ol>
+            </p>
+            """)
+        )
+
+        imagePath = "pictures/" + _("learning_direction_and_dimension_en.png")
+        learningDirectionImage = widgets.Image(
+            value=open(imagePath, "rb").read(), width=600)
+
         theoryBox = widgets.VBox([
             theory1, neuronImage, theory2, artificialNeuronImage, theory3,
             goodDayEmptyImage, theory4, goodDayExampleImage, theory5,
-            simpleNeuronImage
+            simpleNeuronImage, theory6, learningDirectionImage
         ])
 
         # create GUI elements for training
