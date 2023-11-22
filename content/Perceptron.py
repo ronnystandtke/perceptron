@@ -118,8 +118,8 @@ class Perceptron:
             <p>
             <ul>
                 <li>
-                    the dentrites become the inputs x<sub>1</sub> to
-                    x<sub>n</sub>
+                    the dentrites become the inputs i<sub>1</sub> to
+                    i<sub>n</sub>
                 </li>
                 <li>
                     the proximity of the dentrites to the axon is indicated by
@@ -230,7 +230,7 @@ class Perceptron:
             <p>So that we do not always have to distinguish between the
             weightings and the threshold value, we now simplify our model once
             again from a mathematical point of view: The threshold value
-            becomes the special weighting x<sub>0</sub>, whose input is always
+            becomes the special weighting w<sub>0</sub>, whose input is always
             1 (also referred to as "bias" in the specialist literature):</p>
             """)
         )
@@ -258,6 +258,71 @@ class Perceptron:
             matrices) are precisely the use cases in which graphics cards are
             clearly superior to a normal processor, as they are built and
             optimized precisely for such calculations.</p>
+            """) +
+            _("""
+            <p>The mathematically simplified model now looks like this:</p>
+            """)
+        )
+
+        imagePath = "pictures/new_model.png"
+        newModelImage = widgets.Image(
+            value=open(imagePath, "rb").read(), width=450)
+
+        theory10 = widgets.HTML(
+            _("""
+            <p>Let us now return to point 3 of the above-mentioned learning
+            process and the question of the
+            <span style="color:red">reasonable direction</span> of the
+            weighting adjustments. The answer to this question is as follows:
+            Find the difference &delta; between the target value t (the value
+            we expect given a certain input) and the output o (the value the
+            neuron actually output):<p>
+            """) +
+            "&delta; = t - o" +
+            _("""
+            <p>If &delta; is positive, increase the weights, otherwise decrease
+            them.</p>
+            """) +
+            _("""
+            <p>This obviously leads immediately to the next question: Which of
+            the three weightings should be adjusted and
+            <span style="color:red">to what extent</span>?</p>
+            """) +
+            _("""
+            <p>Three considerations are combined to answer this question:</p>
+            """) +
+            _("""
+            <p>The greater the error that occurred, the more the weightings
+            need to be corrected. The new value of each weighting is therefore
+            initially the product of its previous value and the size of the
+            difference &delta; that occurred:</p>
+            """) +
+            """
+            w<sub>n</sub> &larr;
+            w<sub>n</sub> <span style="color:red">&sdot; &delta;</span>
+            """ +
+            _("""
+            <p>However, the difference may be so large that we overshoot the
+            target with the new weightings. We therefore introduce another
+            factor, the learning rate &alpha;:</p>
+            """) +
+            """
+            w<sub>n</sub> &larr; w<sub>n</sub> &sdot; &delta;
+            <span style="color:red">&sdot; &alpha;</span>
+            """ +
+            _("""
+            <p>A further consideration is that inputs that have delivered the
+            strongest signal in the event of an error have also contributed the
+            most to the error. The consequence of this is that the strength of
+            the respective input should also be included in the correction:</p>
+            """) +
+            """
+            w<sub>n</sub> &larr; w<sub>n</sub> &sdot; &delta; &sdot; &alpha;
+            <span style="color:red">&sdot; i<sub>n</sub></span>
+            """ +
+            _("""
+            <p>And now we have all the ingredients for a first small artificial
+            neuron!</p>
             """)
         )
 
@@ -265,14 +330,14 @@ class Perceptron:
             theory1, neuronImage, theory2, artificialNeuronImage, theory3,
             goodDayEmptyImage, theory4, goodDayExampleImage, theory5,
             simpleNeuronImage, theory6, learningDirectionImage, theory7,
-            biasImage, theory8, vectorsImage, theory9
+            biasImage, theory8, vectorsImage, theory9, newModelImage, theory10
         ])
 
         # create GUI elements for training
         trainingHeader = widgets.HTML(_(
             """
             <h1>Training</h1>
-            In this area the perceptron can be trained:
+            In this area the artificial neuron can be trained:
             <ol>
                 <li>
                     Select the checkboxes for the combinations you consider a
@@ -281,7 +346,8 @@ class Perceptron:
                 <li>Press the start button to start the learning process.</li>
                 <li>
                     Press the "Finalize Epoch" button to continue learning
-                    until the current epoch is finished.
+                    until the current epoch is finished (all inputs have been
+                    tested once).
                 </li>
                 <li>
                     Press the "Reset" button to reset the learning process.
@@ -388,7 +454,7 @@ class Perceptron:
         inferenceHeader = widgets.HTML(_(
             """
             <h1>Inference</h1>
-            In this area the perceptron can be used:
+            In this area the artificial neuron can be used:
             <ol>
                 <li>
                     Change the selection of the two input checkboxes on the
