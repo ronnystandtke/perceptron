@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-22 18:28+0100\n"
+"POT-Creation-Date: 2023-11-22 19:51+0100\n"
 "PO-Revision-Date: 2023-10-27 15:55+0200\n"
 "Last-Translator: Ronny Standtke <ronny.standtke@gmx.net>\n"
 "Language-Team: DE <DE@li.org>\n"
@@ -379,8 +379,7 @@ msgid ""
 msgstr ""
 "\n"
 "            <p>Der Lernprozess bei einem künstlichen Neuron könnte zum "
-"Beispiel so aussehen: "
-"            <ol>\n"
+"Beispiel so aussehen:             <ol>\n"
 "                <li>\n"
 "                    Wähle zufällige Werte für die Gewichtungen und den "
 "Schwellenwert.\n"
@@ -389,10 +388,9 @@ msgstr ""
 "Eingaben.</li>\n"
 "                <li>\n"
 "                    Falls das Ergebnis nicht den Erwartungen entspricht, "
-"passe die Gewichtungen und den Schwellenwert in "
-"<span style=\"color:red\">eine sinnvolle Richtung</span> und "
-"<span style=\"color:red\">in geeigneter Dimension</span> an. Springe zurück "
-"zu Punkt 2.\n"
+"passe die Gewichtungen und den Schwellenwert in <span style=\"color:"
+"red\">eine sinnvolle Richtung</span> und <span style=\"color:red\">in "
+"geeigneter Dimension</span> an. Springe zurück zu Punkt 2.\n"
 "                </li>\n"
 "                <li>Fertig, Training erfolgreich.</li>\n"
 "            </ol>\n"
@@ -403,7 +401,63 @@ msgstr ""
 msgid "learning_direction_and_dimension_en.png"
 msgstr "learning_direction_and_dimension_de.png"
 
-#: ../Perceptron.py:236
+#: ../Perceptron.py:229
+msgid ""
+"\n"
+"            <p>So that we do not always have to distinguish between the\n"
+"            weightings and the threshold value, we now simplify our model "
+"once\n"
+"            again from a mathematical point of view: The threshold value\n"
+"            becomes the special weighting x<sub>0</sub>, whose input is "
+"always\n"
+"            1 (also referred to as \"bias\" in the specialist literature):</"
+"p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>Damit wir nicht immer zwischen den Gewichtungen und dem "
+"Schwellenwert unterscheiden müssen, vereinfachen wir unser Modell nun noch "
+"einmal aus mathematischer Sicht: Der Schwellenwert wird zur speziellen "
+"Gewichtung x<sub>0</sub>, dessen Eingabe immer 1 ist (in der Fachliteratur "
+"auch als \"Bias\" bezeichnet):</p>\n"
+"            "
+
+#: ../Perceptron.py:243
+msgid ""
+"\n"
+"            <p>Looking at the last formula, it becomes obvious that we can "
+"now\n"
+"            calculate with vectors:</p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>Beim Betrachten der letzten Formel wird offensichtlich, dass "
+"wir nun mit Vektoren rechnen können:</p>\n"
+"            "
+
+#: ../Perceptron.py:254
+msgid ""
+"\n"
+"            <p>And now you can perhaps already guess why powerful graphics\n"
+"            cards are so popular for training and using AI models: "
+"Calculations\n"
+"            with vectors, scalar products (and later also calculations with\n"
+"            matrices) are precisely the use cases in which graphics cards "
+"are\n"
+"            clearly superior to a normal processor, as they are built and\n"
+"            optimized precisely for such calculations.</p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>Und jetzt ahnt man vielleicht schon, warum leistungsfähige "
+"Grafikkarten für das Training und die Anwendung von KI-Modellen so beliebt "
+"sind: Das Rechnen mit Vektoren, Skalarprodukten (und später auch noch "
+"Berechnungen mit Matrizen) sind genau die Anwendungsfälle, in denen "
+"Grafikkarten einem normalen Prozessor deutlich überlegen sind, da sie genau "
+"für solche Berechnungen gebaut und optimiert werden.</p>\n"
+"            "
+
+#: ../Perceptron.py:273
 msgid ""
 "\n"
 "            <h1>Training</h1>\n"
@@ -447,31 +501,31 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:269
+#: ../Perceptron.py:306
 msgid "Weekend"
 msgstr "Wochenende"
 
-#: ../Perceptron.py:289
+#: ../Perceptron.py:326
 msgid "Visiting Parents"
 msgstr "Eltern zu Besuch"
 
-#: ../Perceptron.py:309
+#: ../Perceptron.py:346
 msgid "Nice Day?"
 msgstr "Schöner Tag?"
 
-#: ../Perceptron.py:326
+#: ../Perceptron.py:363
 msgid "Learning Rate α:"
 msgstr "Lernrate α"
 
-#: ../Perceptron.py:334
+#: ../Perceptron.py:371
 msgid "Finalize Epoch"
 msgstr "Epoche abschließen"
 
-#: ../Perceptron.py:338
+#: ../Perceptron.py:375
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: ../Perceptron.py:352
+#: ../Perceptron.py:389
 msgid ""
 "\n"
 "            <h1>Inference</h1>\n"
@@ -496,23 +550,23 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:409
+#: ../Perceptron.py:446
 msgid "Start (set random weights))"
 msgstr "Start (zufällige Gewichtungen setzen)"
 
-#: ../Perceptron.py:414
+#: ../Perceptron.py:451
 msgid "Continue (get random input)"
 msgstr "Weiter (zufälligen Input holen)"
 
-#: ../Perceptron.py:416
+#: ../Perceptron.py:453
 msgid "Continue (calculate result)"
 msgstr "Weiter (Ausgabe berechnen)"
 
-#: ../Perceptron.py:418
+#: ../Perceptron.py:455
 msgid "Continue (adopt weights)"
 msgstr "Weiter (Gewichtungen anpassen)"
 
-#: ../Perceptron.py:465 ../Perceptron.py:613
+#: ../Perceptron.py:502 ../Perceptron.py:650
 msgid "Epoch: "
 msgstr "Epoche: "
 

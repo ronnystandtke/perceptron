@@ -225,10 +225,47 @@ class Perceptron:
         learningDirectionImage = widgets.Image(
             value=open(imagePath, "rb").read(), width=600)
 
+        theory7 = widgets.HTML(
+            _("""
+            <p>So that we do not always have to distinguish between the
+            weightings and the threshold value, we now simplify our model once
+            again from a mathematical point of view: The threshold value
+            becomes the special weighting x<sub>0</sub>, whose input is always
+            1 (also referred to as "bias" in the specialist literature):</p>
+            """)
+        )
+
+        imagePath = "pictures/introduction_of_bias.png"
+        biasImage = widgets.Image(
+            value=open(imagePath, "rb").read(), width=400)
+
+        theory8 = widgets.HTML(
+            _("""
+            <p>Looking at the last formula, it becomes obvious that we can now
+            calculate with vectors:</p>
+            """)
+        )
+
+        imagePath = "pictures/vectors.png"
+        vectorsImage = widgets.Image(
+            value=open(imagePath, "rb").read(), width=130)
+
+        theory9 = widgets.HTML(
+            _("""
+            <p>And now you can perhaps already guess why powerful graphics
+            cards are so popular for training and using AI models: Calculations
+            with vectors, scalar products (and later also calculations with
+            matrices) are precisely the use cases in which graphics cards are
+            clearly superior to a normal processor, as they are built and
+            optimized precisely for such calculations.</p>
+            """)
+        )
+
         theoryBox = widgets.VBox([
             theory1, neuronImage, theory2, artificialNeuronImage, theory3,
             goodDayEmptyImage, theory4, goodDayExampleImage, theory5,
-            simpleNeuronImage, theory6, learningDirectionImage
+            simpleNeuronImage, theory6, learningDirectionImage, theory7,
+            biasImage, theory8, vectorsImage, theory9
         ])
 
         # create GUI elements for training
