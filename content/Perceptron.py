@@ -84,7 +84,7 @@ class Perceptron:
             _("""
             <p>In simple terms, biological neurons function by receiving and
             transmitting electrical impulses. Reception takes place via the
-            dentrites. The potentials of the electrical impulses received are
+            dendrites. The potentials of the electrical impulses received are
             summed up in the cell body (soma). As soon as this sum exceeds a
             certain threshold value, the action potential, the electrical
             impulse is transmitted on the axon. This works according to the
@@ -118,11 +118,11 @@ class Perceptron:
             <p>
             <ul>
                 <li>
-                    the dentrites become the inputs i<sub>1</sub> to
+                    the dendrites become the inputs i<sub>1</sub> to
                     i<sub>n</sub>
                 </li>
                 <li>
-                    the proximity of the dentrites to the axon is indicated by
+                    the proximity of the dendrites to the axon is indicated by
                     the respective weights w<sub>1</sub> to w<sub>n</sub>
                 </li>
                 <li>
@@ -184,11 +184,19 @@ class Perceptron:
             always generate the desired output for all possible variations of
             the inputs.</p>
             """) +
+            _("<h2>Machine learning</h2>") +
             _("""
-            <p>To do this, we actually just have to set all the
+            <p>To do this, we must first assign numerical values to the truth
+            values of the two inputs. Usually, "true" is assigned 1 and "false"
+            0. Example: If it is weekend, the input i<sub>1</sub> is assigned
+            the value 1 and if the parents are not coming to visit, the input
+            i<sub>2</sub> is assigned the value 0.</p>
+            """) +
+            _("""
+            <p>Then we only have to set the
             <span style="color:red">weights</span> and the
             <span style="color:red">threshold value</span> in our artificial
-            neuron appropriately:</p>
+            neuron accordingly:</p>
             """)
         )
 
@@ -228,9 +236,9 @@ class Perceptron:
         theory7 = widgets.HTML(
             _("""
             <p>So that we do not always have to distinguish between the
-            weightings and the threshold value, we now simplify our model once
+            weights and the threshold value, we now simplify our model once
             again from a mathematical point of view: The threshold value
-            becomes the special weighting w<sub>0</sub>, whose input is always
+            becomes the special weight w<sub>0</sub>, whose input is always
             1 (also referred to as "bias" in the specialist literature):</p>
             """)
         )
@@ -285,15 +293,15 @@ class Perceptron:
             """) +
             _("""
             <p>This obviously leads immediately to the next question: Which of
-            the three weightings should be adjusted and
+            the three weights should be adjusted and
             <span style="color:red">to what extent</span>?</p>
             """) +
             _("""
             <p>Three considerations are combined to answer this question:</p>
             """) +
             _("""
-            <p>The greater the error that occurred, the more the weightings
-            need to be corrected. The new value of each weighting is therefore
+            <p>The greater the error that occurred, the more the weights need
+            to be corrected. The new value of each weight is therefore
             initially the product of its previous value and the size of the
             difference &delta; that occurred:</p>
             """) +
@@ -303,7 +311,7 @@ class Perceptron:
             """ +
             _("""
             <p>However, the difference may be so large that we overshoot the
-            target with the new weightings. We therefore introduce another
+            target with the new weights. We therefore introduce another
             factor, the learning rate &alpha;:</p>
             """) +
             """
@@ -334,8 +342,8 @@ class Perceptron:
         ])
 
         # create GUI elements for training
-        trainingHeader = widgets.HTML(_(
-            """
+        trainingHeader = widgets.HTML(
+            _("""
             <h1>Training</h1>
             In this area the artificial neuron can be trained:
             <ol>
@@ -353,8 +361,8 @@ class Perceptron:
                     Press the "Reset" button to reset the learning process.
                 </li>
             </ol>
-            """
-        ))
+            """)
+        )
 
         # we don't need the empty description label in front of the checkboxes
         checkBoxStyle = {'description_width': '0px'}
@@ -450,11 +458,34 @@ class Perceptron:
 
         self.protocolOutput = widgets.Output()
 
+        taskWidget = widgets.HTML(
+            _("""
+            <h2>Task</h2>
+            <p>In our simple example, there are 16 different variants, which
+            could be a nice day (4 checkboxes = 4 bits, 2<sup>4</sup>=16).
+            However, a single artificial neuron can <em>NOT</em> successfully
+            learn two specific variants (the reason for this will follow). Try
+            to find out which two variants these are.</p>
+            """) +
+            _("""
+            <h2>Resource consumption in machine learning</h2>
+            <p>When training the artificial neuron, you may have noticed that
+            this process can take very different lengths of time, depending on
+            the randomly selected starting values of the weights. In the worst
+            case, even in our simple example, the training can take several
+            dozen weight adjustments before the artificial neuron produces the
+            desired output. This hopefully makes it clear why the resource
+            consumption for training an entire neural network with not just
+            three but several billion parameters takes so long and consumes so
+            many resources.</p>
+            """)
+        )
+
         # create GUI elements for inference
         inferenceHeader = widgets.HTML(_(
             """
             <h1>Inference</h1>
-            In this area the artificial neuron can be used:
+            In this area the trained artificial neuron can be tested:
             <ol>
                 <li>
                     Change the selection of the two input checkboxes on the
@@ -485,7 +516,7 @@ class Perceptron:
 
         trainingBox = widgets.VBox(
             [trainingHeader, targetsBox, self.alphaText,
-             buttonsBox, self.epochLabel, self.protocolOutput])
+             buttonsBox, self.epochLabel, self.protocolOutput, taskWidget])
 
         inferenceBox = widgets.VBox(
             [inferenceHeader,

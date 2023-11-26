@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-22 22:13+0100\n"
+"POT-Creation-Date: 2023-11-26 07:22+0100\n"
 "PO-Revision-Date: 2023-10-27 15:55+0200\n"
 "Last-Translator: Ronny Standtke <ronny.standtke@gmx.net>\n"
 "Language-Team: DE <DE@li.org>\n"
@@ -93,7 +93,7 @@ msgid ""
 "            <p>In simple terms, biological neurons function by receiving "
 "and\n"
 "            transmitting electrical impulses. Reception takes place via the\n"
-"            dentrites. The potentials of the electrical impulses received "
+"            dendrites. The potentials of the electrical impulses received "
 "are\n"
 "            summed up in the cell body (soma). As soon as this sum exceeds "
 "a\n"
@@ -117,7 +117,7 @@ msgstr ""
 "\n"
 "            <p>Biologische Nervenzellen funktionieren vereinfacht gesagt "
 "über den Empfang und die Weitergabe von elektrischen Impulsen. Der Empfang "
-"erfolgt über die Dentriten. Die Potenziale der empfangenen elektrischen "
+"erfolgt über die Dendriten. Die Potenziale der empfangenen elektrischen "
 "Impulse werden im Zellkörper (Soma) aufsummiert. Sobald diese Summe einen "
 "bestimmten Schwellenwert, das Aktionspotenzial, überschreitet, wird der "
 "elektrische Impuls auf dem Axon weitergegeben. Das funktioniert nach dem "
@@ -172,11 +172,11 @@ msgid ""
 "            <p>\n"
 "            <ul>\n"
 "                <li>\n"
-"                    the dentrites become the inputs i<sub>1</sub> to\n"
+"                    the dendrites become the inputs i<sub>1</sub> to\n"
 "                    i<sub>n</sub>\n"
 "                </li>\n"
 "                <li>\n"
-"                    the proximity of the dentrites to the axon is indicated "
+"                    the proximity of the dendrites to the axon is indicated "
 "by\n"
 "                    the respective weights w<sub>1</sub> to w<sub>n</sub>\n"
 "                </li>\n"
@@ -201,11 +201,11 @@ msgstr ""
 "            <p>\n"
 "            <ul>\n"
 "                <li>\n"
-"                    die Dentriten werden zu den Eingaben i<sub>1</sub> bis\n"
+"                    die Dendriten werden zu den Eingaben i<sub>1</sub> bis\n"
 "                    i<sub>n</sub>\n"
 "                </li>\n"
 "                <li>\n"
-"                    die Nähe der Dentriten zum Axon wird durch "
+"                    die Nähe der Dendriten zum Axon wird durch "
 "die                     jeweiligen Gewichtungen w<sub>1</sub> bis w<sub>n</"
 "sub>                     angegeben                </li>\n"
 "                <li>\n"
@@ -286,7 +286,7 @@ msgstr ""
 "            <p>Wie man sich leicht denken kann, ist die Antwort auf diese "
 "Frage sehr individuell. Nehmen wir an, wir betrachten die Situation für "
 "einen Menschen, für den immer dann ein guter Tag ist, wenn Wochenende ist "
-"oder die Eltern zu Besuch sind, oder beides zutrifft:</p>\n"
+"oder die Eltern zu Besuch kommen, oder beides zutrifft:</p>\n"
 "            "
 
 #: ../Perceptron.py:174
@@ -311,33 +311,59 @@ msgstr ""
 "\n"
 "            <p>Wenn Sie schon einmal programmiert haben, werden Sie "
 "höchstwahrscheinlich sofort sehen, dass wir es hier mit einer ODER-"
-"Verknüpfung der beiden Eingänge zu tun haben. Aber wir wollen diese Aufgabe "
+"Verknüpfung der beiden Eingaben zu tun haben. Aber wir wollen diese Aufgabe "
 "ausnahmsweise einmal <em>NICHT</em> mit expliziten Befehlen lösen, sondern "
 "einer künstlichen Nervenzelle beibringen, bei allen möglichen Variationen "
 "der Eingaben immer die gewünschte Ausgabe zu erzeugen.</p>\n"
 "            "
 
 #: ../Perceptron.py:187
+msgid "<h2>Machine learning</h2>"
+msgstr "<h2>Maschinelles Lernen</h2>"
+
+#: ../Perceptron.py:188
 msgid ""
 "\n"
-"            <p>To do this, we actually just have to set all the\n"
-"            <span style=\"color:red\">weights</span> and the\n"
-"            <span style=\"color:red\">threshold value</span> in our "
-"artificial\n"
-"            neuron appropriately:</p>\n"
+"            <p>To do this, we must first assign numerical values to the "
+"truth\n"
+"            values of the two inputs. Usually, \"true\" is assigned 1 and "
+"\"false\"\n"
+"            0. Example: If it is weekend, the input i<sub>1</sub> is "
+"assigned\n"
+"            the value 1 and if the parents are not coming to visit, the "
+"input\n"
+"            i<sub>2</sub> is assigned the value 0.</p>\n"
 "            "
 msgstr ""
 "\n"
-"            <p>Dazu müssen wir eigentlich nur alle <span style=\"color:"
+"            <p>Dazu müssen wir den Wahrheitswerten der beiden Eingänge "
+"zunächst numerische Werte zuordnen. Normalerweise wird \"wahr\" mit 1 und "
+"\"falsch\" mit 0 belegt. Beispiel: Wenn es Wochenende ist, erhält der Eingang "
+"i<sub>1</sub> den Wert 1 und wenn die Eltern nicht zu Besuch kommen, erhält "
+"der Eingang i<sub>2</sub> den Wert 0.</p>\n"
+"            "
+
+#: ../Perceptron.py:195
+msgid ""
+"\n"
+"            <p>Then we only have to set the\n"
+"            <span style=\"color:red\">weights</span> and the\n"
+"            <span style=\"color:red\">threshold value</span> in our "
+"artificial\n"
+"            neuron accordingly:</p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>Dann müssen wir eigentlich nur noch alle <span style=\"color:"
 "red\">Gewichtungen</span> und den <span style=\"color:red\">Schwellenwert</"
 "span> in unserer künstlichen Nervenzelle passend einstellen:</p>\n"
 "            "
 
-#: ../Perceptron.py:195
+#: ../Perceptron.py:203
 msgid "simple_neuron_en.png"
 msgstr "simple_neuron_de.png"
 
-#: ../Perceptron.py:200
+#: ../Perceptron.py:208
 msgid ""
 "\n"
 "            <p>But how do you find the right values in a targeted and "
@@ -352,7 +378,7 @@ msgstr ""
 "Nervenzelle?</p>\n"
 "            "
 
-#: ../Perceptron.py:204
+#: ../Perceptron.py:212
 msgid ""
 "\n"
 "            <p>The learning process for an artificial neuron could look "
@@ -397,19 +423,17 @@ msgstr ""
 "            </p>\n"
 "            "
 
-#: ../Perceptron.py:224
+#: ../Perceptron.py:232
 msgid "learning_direction_and_dimension_en.png"
 msgstr "learning_direction_and_dimension_de.png"
 
-#: ../Perceptron.py:229
+#: ../Perceptron.py:237
 msgid ""
 "\n"
 "            <p>So that we do not always have to distinguish between the\n"
-"            weightings and the threshold value, we now simplify our model "
-"once\n"
+"            weights and the threshold value, we now simplify our model once\n"
 "            again from a mathematical point of view: The threshold value\n"
-"            becomes the special weighting w<sub>0</sub>, whose input is "
-"always\n"
+"            becomes the special weight w<sub>0</sub>, whose input is always\n"
 "            1 (also referred to as \"bias\" in the specialist literature):</"
 "p>\n"
 "            "
@@ -422,7 +446,7 @@ msgstr ""
 "auch als \"Bias\" bezeichnet):</p>\n"
 "            "
 
-#: ../Perceptron.py:243
+#: ../Perceptron.py:251
 msgid ""
 "\n"
 "            <p>Looking at the last formula, it becomes obvious that we can "
@@ -435,7 +459,7 @@ msgstr ""
 "wir nun mit Vektoren rechnen können:</p>\n"
 "            "
 
-#: ../Perceptron.py:254
+#: ../Perceptron.py:262
 msgid ""
 "\n"
 "            <p>And now you can perhaps already guess why powerful graphics\n"
@@ -457,7 +481,7 @@ msgstr ""
 "für solche Berechnungen gebaut und optimiert werden.</p>\n"
 "            "
 
-#: ../Perceptron.py:262
+#: ../Perceptron.py:270
 msgid ""
 "\n"
 "            <p>The mathematically simplified model now looks like this:</p>\n"
@@ -467,7 +491,7 @@ msgstr ""
 "            <p>Das mathematisch vereinfachte Modell sieht nun so aus:</p>\n"
 "            "
 
-#: ../Perceptron.py:272
+#: ../Perceptron.py:280
 msgid ""
 "\n"
 "            <p>Let us now return to point 3 of the above-mentioned learning\n"
@@ -491,7 +515,7 @@ msgstr ""
 "Nervenzelle tatsächlich ausgegeben hat):<p>\n"
 "            "
 
-#: ../Perceptron.py:282
+#: ../Perceptron.py:290
 msgid ""
 "\n"
 "            <p>If &delta; is positive, increase the weights, otherwise "
@@ -504,12 +528,12 @@ msgstr ""
 "verringere sie.</p>\n"
 "            "
 
-#: ../Perceptron.py:286
+#: ../Perceptron.py:294
 msgid ""
 "\n"
 "            <p>This obviously leads immediately to the next question: Which "
 "of\n"
-"            the three weightings should be adjusted and\n"
+"            the three weights should be adjusted and\n"
 "            <span style=\"color:red\">to what extent</span>?</p>\n"
 "            "
 msgstr ""
@@ -519,7 +543,7 @@ msgstr ""
 "angepasst werden?</p>\n"
 "            "
 
-#: ../Perceptron.py:291
+#: ../Perceptron.py:299
 msgid ""
 "\n"
 "            <p>Three considerations are combined to answer this question:</"
@@ -531,12 +555,12 @@ msgstr ""
 "kombiniert:</p>\n"
 "            "
 
-#: ../Perceptron.py:294
+#: ../Perceptron.py:302
 msgid ""
 "\n"
-"            <p>The greater the error that occurred, the more the weightings\n"
-"            need to be corrected. The new value of each weighting is "
-"therefore\n"
+"            <p>The greater the error that occurred, the more the weights "
+"need\n"
+"            to be corrected. The new value of each weight is therefore\n"
 "            initially the product of its previous value and the size of the\n"
 "            difference &delta; that occurred:</p>\n"
 "            "
@@ -548,12 +572,12 @@ msgstr ""
 "der aufgetretenen Differenz &delta;:</p>\n"
 "            "
 
-#: ../Perceptron.py:304
+#: ../Perceptron.py:312
 msgid ""
 "\n"
 "            <p>However, the difference may be so large that we overshoot "
 "the\n"
-"            target with the new weightings. We therefore introduce another\n"
+"            target with the new weights. We therefore introduce another\n"
 "            factor, the learning rate &alpha;:</p>\n"
 "            "
 msgstr ""
@@ -563,7 +587,7 @@ msgstr ""
 "Daher führen wir einen weiteren Faktor, die Lernrate &alpha;, ein::</p>\n"
 "            "
 
-#: ../Perceptron.py:313
+#: ../Perceptron.py:321
 msgid ""
 "\n"
 "            <p>A further consideration is that inputs that have delivered "
@@ -583,7 +607,7 @@ msgstr ""
 "ebenfalls in die Korrektur einzubeziehen:</p>\n"
 "            "
 
-#: ../Perceptron.py:323
+#: ../Perceptron.py:331
 msgid ""
 "\n"
 "            <p>And now we have all the ingredients for a first small "
@@ -596,7 +620,7 @@ msgstr ""
 "künstliche Nervenzelle!</p>\n"
 "            "
 
-#: ../Perceptron.py:338
+#: ../Perceptron.py:346
 msgid ""
 "\n"
 "            <h1>Training</h1>\n"
@@ -625,7 +649,7 @@ msgid ""
 msgstr ""
 "\n"
 "            <h1>Training</h1>\n"
-"            In diesem Bereich kann die künstiliche Nervenzelle trainiert "
+"            In diesem Bereich kann die künstliche Nervenzelle trainiert "
 "werden:\n"
 "            <ol>\n"
 "                <li>\n"
@@ -643,35 +667,91 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:372
+#: ../Perceptron.py:380
 msgid "Weekend"
 msgstr "Wochenende"
 
-#: ../Perceptron.py:392
+#: ../Perceptron.py:400
 msgid "Visiting Parents"
 msgstr "Eltern zu Besuch"
 
-#: ../Perceptron.py:412
+#: ../Perceptron.py:420
 msgid "Nice Day?"
 msgstr "Schöner Tag?"
 
-#: ../Perceptron.py:429
+#: ../Perceptron.py:437
 msgid "Learning Rate α:"
 msgstr "Lernrate α"
 
-#: ../Perceptron.py:437
+#: ../Perceptron.py:445
 msgid "Finalize Epoch"
 msgstr "Epoche abschließen"
 
-#: ../Perceptron.py:441
+#: ../Perceptron.py:449
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: ../Perceptron.py:455
+#: ../Perceptron.py:462
+msgid ""
+"\n"
+"            <h2>Task</h2>\n"
+"            <p>In our simple example, there are 16 different variants, "
+"which\n"
+"            could be a nice day (4 checkboxes = 4 bits, 2<sup>4</sup>=16).\n"
+"            However, a single artificial neuron can <em>NOT</em> "
+"successfully\n"
+"            learn two specific variants (the reason for this will follow). "
+"Try\n"
+"            to find out which two variants these are.</p>\n"
+"            "
+msgstr ""
+"\n"
+"            <h2>Aufgabe</h2>\n"
+"            <p>In unserem einfachen Beispiel gibt es 16 verschiedene "
+"Varianten, was ein schöner Tag sein könnte (4 Checkboxen = 4 Bits, 2<sup>4</"
+"sup>=16). Eine einzelne künstliche Nervenzelle kann jedoch zwei spezielle "
+"Varianten <em>NICHT</em> erfolgreich lernen (die Begründung, dafür folgt "
+"noch). Versuchen Sie herauszufinden, welche zwei Varianten das sind.</p>\n"
+"            "
+
+#: ../Perceptron.py:470
+msgid ""
+"\n"
+"            <h2>Resource consumption in machine learning</h2>\n"
+"            <p>When training the artificial neuron, you may have noticed "
+"that\n"
+"            this process can take very different lengths of time, depending "
+"on\n"
+"            the randomly selected starting values of the weights. In the "
+"worst\n"
+"            case, even in our simple example, the training can take several\n"
+"            dozen weight adjustments before the artificial neuron produces "
+"the\n"
+"            desired output. This hopefully makes it clear why the resource\n"
+"            consumption for training an entire neural network with not just\n"
+"            three but several billion parameters takes so long and consumes "
+"so\n"
+"            many resources.</p>\n"
+"            "
+msgstr ""
+"\n"
+"            <h2>Ressourcenverbrauch beim Maschinellen Lernen</h2>\n"
+"            <p>Beim Training der künstlichen Nervenzelle ist Ihnen "
+"vielleicht aufgefallen, dass dieser Prozess, abhängig von den zufällig "
+"gewählten Startwerten der Gewichtungen, sehr unterschiedlich lang dauern "
+"kann. Im schlimmsten Fall kann das Training selbst in unserem einfachen "
+"Beispiel mehrere Dutzend Gewichtsanpassungen benötigen, bis die künstliche "
+"Nervenzelle die gewünschten Ausgaben produziert. Das verdeutlicht "
+"hoffentlich, warum der Ressourcenverbrauch für das Training eines ganzen "
+"neuronalen Netzwerks nicht nur mit drei sondern mit mehreren Milliarden "
+"Parametern so lange braucht und so enorm viel Ressourcen verbraucht.</p>\n"
+"            "
+
+#: ../Perceptron.py:486
 msgid ""
 "\n"
 "            <h1>Inference</h1>\n"
-"            In this area the artificial neuron can be used:\n"
+"            In this area the trained artificial neuron can be tested:\n"
 "            <ol>\n"
 "                <li>\n"
 "                    Change the selection of the two input checkboxes on the\n"
@@ -683,8 +763,8 @@ msgid ""
 msgstr ""
 "\n"
 "            <h1>Inferenz</h1>\n"
-"            In diesem Bereich kann die künstliche Nervenzelle benutzt "
-"werden:\n"
+"            In diesem Bereich kann die trainierte künstliche Nervenzelle "
+"getestet werden:\n"
 "            <ol>\n"
 "                <li>\n"
 "                    Ändern Sie die Auswahl der beiden Eingabe-Checkboxen auf "
@@ -693,23 +773,23 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:512
+#: ../Perceptron.py:543
 msgid "Start (set random weights))"
 msgstr "Start (zufällige Gewichtungen setzen)"
 
-#: ../Perceptron.py:517
+#: ../Perceptron.py:548
 msgid "Continue (get random input)"
 msgstr "Weiter (zufälligen Input holen)"
 
-#: ../Perceptron.py:519
+#: ../Perceptron.py:550
 msgid "Continue (calculate result)"
 msgstr "Weiter (Ausgabe berechnen)"
 
-#: ../Perceptron.py:521
+#: ../Perceptron.py:552
 msgid "Continue (adopt weights)"
 msgstr "Weiter (Gewichtungen anpassen)"
 
-#: ../Perceptron.py:568 ../Perceptron.py:716
+#: ../Perceptron.py:599 ../Perceptron.py:747
 msgid "Epoch: "
 msgstr "Epoche: "
 
