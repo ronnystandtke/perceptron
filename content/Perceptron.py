@@ -2,7 +2,7 @@ import ipywidgets as widgets
 import pandas as pd
 from ipywidgets import Layout
 from IPython.display import display
-from random import random, shuffle
+from random import uniform, shuffle
 from enum import Enum, auto
 import gettext
 
@@ -675,7 +675,7 @@ class Perceptron:
             })
 
             # start with random weights
-            self.weights = [random() for i in range(0, 3)]
+            self.weights = [uniform(-1, 1) for i in range(0, 3)]
             self.epoch = 0
             self.startEpoch()
 
