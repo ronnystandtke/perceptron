@@ -76,7 +76,7 @@ msgstr ""
 "\n"
 "            <p>Die Differenz kann jedoch unter Umständen so gross sein, dass "
 "wir mit den neuen Gewichtungen viel zu weit über das Ziel hinausschiessen. "
-"Daher führen wir einen weiteren Faktor, die Lernrate &alpha;, ein::</p>\n"
+"Daher führen wir einen weiteren Faktor, die Lernrate &alpha;, ein:</p>\n"
 "            "
 
 #: ../Perceptron.py:338
