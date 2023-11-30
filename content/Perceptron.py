@@ -353,6 +353,10 @@ class Perceptron:
                 </li>
                 <li>Press the start button to start the learning process.</li>
                 <li>
+                    Press the same button to continue the learning process
+                    step-by-step.
+                </li>
+                <li>
                     Press the "Finalize Epoch" button to continue learning
                     until the current epoch is finished (all inputs have been
                     tested once).
@@ -377,7 +381,9 @@ class Perceptron:
 
         inputImage1 = widgets.Image(
             value=open("pictures/weekend.png", "rb").read(), width=100)
-        inputLabel1 = widgets.Label(value=_("Weekend"))
+        inputLabel1 = widgets.HTML(
+            "<p style=\"text-align:center;\">" + _("Weekend") +
+            "<br><i>i<sub>1</sub></i></p>")
         self.inputCheckBox1A = widgets.Checkbox(
             disabled=True, style=checkBoxStyle,
             layout=checkBoxLayout, value=False)
@@ -397,7 +403,9 @@ class Perceptron:
 
         inputImage2 = widgets.Image(
             value=open("pictures/parents.png", "rb").read(), width=100)
-        inputLabel2 = widgets.Label(value=_("Visiting Parents"))
+        inputLabel2 = widgets.HTML(
+            "<p style=\"text-align:center;\">" + _("Visiting Parents") +
+            "<br><i>i<sub>2</sub></i></p>")
         self.inputCheckBox2A = widgets.Checkbox(
             disabled=True, style=checkBoxStyle,
             layout=checkBoxLayout, value=False)
@@ -417,7 +425,12 @@ class Perceptron:
 
         targetImage = widgets.Image(
             value=open("pictures/happy.png", "rb").read(), width=100)
-        targetLabel = widgets.Label(value=_("Nice Day?"))
+        # We have to add the empty "<sub> </sub>" here. Otherwise the
+        # checkboxes would not be aligned because the labels of inputs and
+        # target would have a different height.
+        targetLabel = widgets.HTML(
+            "<p style=\"text-align:center;\">" + _("Nice Day?") +
+            "<br><i>t<sub> </sub></i></p>")
         self.targetCheckBoxA = widgets.Checkbox(
             style=checkBoxStyle, layout=checkBoxLayout, value=False)
         self.targetCheckBoxB = widgets.Checkbox(
@@ -518,9 +531,17 @@ class Perceptron:
             [trainingHeader, targetsBox, self.alphaText,
              buttonsBox, self.epochLabel, self.protocolOutput, taskWidget])
 
+        # We have to add the empty "<sub> </sub>" here. Otherwise the
+        # checkboxes would not be aligned because the labels of inputs and
+        # target would have a different height.
+        inferenceTargetLabel = widgets.HTML(
+            "<p style=\"text-align:center;\">" + _("Nice Day?") +
+            "<br><i>o<sub> </sub></i></p>")
+        inferenceTargetVBox = widgets.VBox(
+            [targetImage, inferenceTargetLabel, self.targetCheckBox])
         inferenceBox = widgets.VBox(
             [inferenceHeader,
-             widgets.HBox([input1VBox, input2VBox, targetVBox])])
+             widgets.HBox([input1VBox, input2VBox, inferenceTargetVBox])])
 
         self.GUI = widgets.VBox([theoryBox, trainingBox, inferenceBox])
 
