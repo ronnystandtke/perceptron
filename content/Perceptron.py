@@ -379,10 +379,15 @@ class Perceptron:
             margin="0px 30px 0px 0px", align_items="center",
             border_left="1px solid", padding="0px 0px 0px 30px")
 
+        labelParagraphStyle = (
+            "<p style=\""
+            "text-align:center;margin-bottom:5px;line-height:1.2;"
+            "\">"
+        )
         inputImage1 = widgets.Image(
             value=open("pictures/weekend.png", "rb").read(), width=100)
         inputLabel1 = widgets.HTML(
-            "<p style=\"text-align:center;\">" + _("Weekend") +
+            labelParagraphStyle + _("Weekend") +
             "<br><i>i<sub>1</sub></i></p>")
         self.inputCheckBox1A = widgets.Checkbox(
             disabled=True, style=checkBoxStyle,
@@ -404,7 +409,7 @@ class Perceptron:
         inputImage2 = widgets.Image(
             value=open("pictures/parents.png", "rb").read(), width=100)
         inputLabel2 = widgets.HTML(
-            "<p style=\"text-align:center;\">" + _("Visiting Parents") +
+            labelParagraphStyle + _("Visiting Parents") +
             "<br><i>i<sub>2</sub></i></p>")
         self.inputCheckBox2A = widgets.Checkbox(
             disabled=True, style=checkBoxStyle,
@@ -429,7 +434,7 @@ class Perceptron:
         # checkboxes would not be aligned because the labels of inputs and
         # target would have a different height.
         targetLabel = widgets.HTML(
-            "<p style=\"text-align:center;\">" + _("Nice Day?") +
+            labelParagraphStyle + _("Nice Day?") +
             "<br><i>t<sub> </sub></i></p>")
         self.targetCheckBoxA = widgets.Checkbox(
             style=checkBoxStyle, layout=checkBoxLayout, value=False)
@@ -535,10 +540,11 @@ class Perceptron:
         # checkboxes would not be aligned because the labels of inputs and
         # target would have a different height.
         inferenceTargetLabel = widgets.HTML(
-            "<p style=\"text-align:center;\">" + _("Nice Day?") +
+            labelParagraphStyle + _("Nice Day?") +
             "<br><i>o<sub> </sub></i></p>")
         inferenceTargetVBox = widgets.VBox(
             [targetImage, inferenceTargetLabel, self.targetCheckBox])
+        inferenceTargetVBox.layout = targetLayout
         inferenceBox = widgets.VBox(
             [inferenceHeader,
              widgets.HBox([input1VBox, input2VBox, inferenceTargetVBox])])
