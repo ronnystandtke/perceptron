@@ -7,7 +7,7 @@ See the --> [this Wikipedia article](https://en.wikipedia.org/wiki/Perceptron) <
 
 [![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://ronnystandtke.github.io/perceptron/notebooks/index.html?path=Perceptron.ipynb)
 
-➡️ **https://ronnystandtke.github.io/perceptron/lab?path=Perceptron.ipynb**
+➡️ **https://ronnystandtke.github.io/perceptron/notebooks/index.html?path=Perceptron.ipynb**
 
 ## Requirements
 
