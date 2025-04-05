@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-30 20:44+0100\n"
+"POT-Creation-Date: 2025-04-05 19:08+0200\n"
 "PO-Revision-Date: 2023-10-27 15:55+0200\n"
 "Last-Translator: Ronny Standtke <ronny.standtke@gmx.net>\n"
 "Language-Team: DE <DE@li.org>\n"
@@ -243,11 +243,10 @@ msgstr "<h2>Beispiel</h2>"
 #: ../Perceptron.py:148
 msgid ""
 "\n"
-"            <p>In our example, there should be exactly two inputs, each of "
-"which\n"
-"            can only accept truth values (i.e. \"true\" or \"false\"). The "
-"two\n"
-"            inputs are:\n"
+"            <p>In our example, there should be exactly two inputs, each of\n"
+"            which can only accept truth values (i.e. \"true\" or \"false\"). "
+"The\n"
+"            two inputs are:\n"
 "            <ul>\n"
 "                <li>It is weekend.</li>\n"
 "                <li>Parents come to visit.</li>\n"
@@ -368,8 +367,8 @@ msgid ""
 "\n"
 "            <p>But how do you find the right values in a targeted and "
 "efficient\n"
-"            way? Or to put it another way: How does an artificial neuron "
-"\"learn\"?</p>\n"
+"            way? Or to put it another way: How does an artificial neuron\n"
+"            \"learn\"?</p>\n"
 "            "
 msgstr ""
 "\n"
@@ -378,7 +377,7 @@ msgstr ""
 "Nervenzelle?</p>\n"
 "            "
 
-#: ../Perceptron.py:212
+#: ../Perceptron.py:213
 msgid ""
 "\n"
 "            <p>The learning process for an artificial neuron could look "
@@ -423,11 +422,11 @@ msgstr ""
 "            </p>\n"
 "            "
 
-#: ../Perceptron.py:232
+#: ../Perceptron.py:233
 msgid "learning_direction_and_dimension_en.png"
 msgstr "learning_direction_and_dimension_de.png"
 
-#: ../Perceptron.py:237
+#: ../Perceptron.py:238
 msgid ""
 "\n"
 "            <p>So that we do not always have to distinguish between the\n"
@@ -446,7 +445,7 @@ msgstr ""
 "auch als \"Bias\" bezeichnet):</p>\n"
 "            "
 
-#: ../Perceptron.py:251
+#: ../Perceptron.py:252
 msgid ""
 "\n"
 "            <p>Looking at the last formula, it becomes obvious that we can "
@@ -459,7 +458,7 @@ msgstr ""
 "wir nun mit Vektoren rechnen können:</p>\n"
 "            "
 
-#: ../Perceptron.py:262
+#: ../Perceptron.py:263
 msgid ""
 "\n"
 "            <p>And now you can perhaps already guess why powerful graphics\n"
@@ -481,7 +480,7 @@ msgstr ""
 "für solche Berechnungen gebaut und optimiert werden.</p>\n"
 "            "
 
-#: ../Perceptron.py:270
+#: ../Perceptron.py:271
 msgid ""
 "\n"
 "            <p>The mathematically simplified model now looks like this:</p>\n"
@@ -491,7 +490,7 @@ msgstr ""
 "            <p>Das mathematisch vereinfachte Modell sieht nun so aus:</p>\n"
 "            "
 
-#: ../Perceptron.py:280
+#: ../Perceptron.py:281
 msgid ""
 "\n"
 "            <p>Let us now return to point 3 of the above-mentioned learning\n"
@@ -515,7 +514,7 @@ msgstr ""
 "Nervenzelle tatsächlich ausgegeben hat):<p>\n"
 "            "
 
-#: ../Perceptron.py:290
+#: ../Perceptron.py:291
 msgid ""
 "\n"
 "            <p>If &delta; is positive, increase the weights, otherwise "
@@ -528,7 +527,7 @@ msgstr ""
 "verringere sie.</p>\n"
 "            "
 
-#: ../Perceptron.py:294
+#: ../Perceptron.py:295
 msgid ""
 "\n"
 "            <p>This obviously leads immediately to the next question: Which "
@@ -543,7 +542,7 @@ msgstr ""
 "angepasst werden?</p>\n"
 "            "
 
-#: ../Perceptron.py:299
+#: ../Perceptron.py:300
 msgid ""
 "\n"
 "            <p>Three considerations are combined to answer this question:</"
@@ -555,7 +554,7 @@ msgstr ""
 "kombiniert:</p>\n"
 "            "
 
-#: ../Perceptron.py:302
+#: ../Perceptron.py:303
 msgid ""
 "\n"
 "            <p>The greater the error that occurred, the more the weights "
@@ -572,7 +571,7 @@ msgstr ""
 "der aufgetretenen Differenz &delta;:</p>\n"
 "            "
 
-#: ../Perceptron.py:312
+#: ../Perceptron.py:313
 msgid ""
 "\n"
 "            <p>However, the difference may be so large that we overshoot "
@@ -587,7 +586,7 @@ msgstr ""
 "Daher führen wir einen weiteren Faktor, die Lernrate &alpha;, ein:</p>\n"
 "            "
 
-#: ../Perceptron.py:321
+#: ../Perceptron.py:322
 msgid ""
 "\n"
 "            <p>A further consideration is that inputs that have delivered "
@@ -607,7 +606,7 @@ msgstr ""
 "ebenfalls in die Korrektur einzubeziehen:</p>\n"
 "            "
 
-#: ../Perceptron.py:331
+#: ../Perceptron.py:332
 msgid ""
 "\n"
 "            <p>And now we have all the ingredients for a first small "
@@ -620,7 +619,7 @@ msgstr ""
 "künstliche Nervenzelle!</p>\n"
 "            "
 
-#: ../Perceptron.py:346
+#: ../Perceptron.py:347
 msgid ""
 "\n"
 "            <h1>Training</h1>\n"
@@ -662,8 +661,7 @@ msgstr ""
 "                <li>Drücken Sie den Startknopf, um den Lernprozess zu "
 "starten.</li>\n"
 "                <li>Drücken Sie den gleichen Knopf, um den Lernprozess "
-"schrittweise fortzusetzen."
-"                <li>\n"
+"schrittweise fortzusetzen.                <li>\n"
 "                    Drücken Sie den Knopf \"Epoche abschließen\", um so "
 "lange zu lernen, bis die aktuelle Epoche abgeschlossen wurde (alle Eingaben "
 "wurden einmal getestet).                </li>\n"
@@ -673,31 +671,31 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:385
+#: ../Perceptron.py:391
 msgid "Weekend"
 msgstr "Wochenende"
 
-#: ../Perceptron.py:407
+#: ../Perceptron.py:413
 msgid "Visiting Parents"
 msgstr "Eltern zu Besuch"
 
-#: ../Perceptron.py:429
+#: ../Perceptron.py:438 ../Perceptron.py:544
 msgid "Nice Day?"
 msgstr "Schöner Tag?"
 
-#: ../Perceptron.py:447
+#: ../Perceptron.py:456
 msgid "Learning Rate α:"
 msgstr "Lernrate α"
 
-#: ../Perceptron.py:455
+#: ../Perceptron.py:464
 msgid "Finalize Epoch"
 msgstr "Epoche abschließen"
 
-#: ../Perceptron.py:459
+#: ../Perceptron.py:468
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: ../Perceptron.py:472
+#: ../Perceptron.py:481
 msgid ""
 "\n"
 "            <h2>Task</h2>\n"
@@ -720,7 +718,7 @@ msgstr ""
 "noch). Versuchen Sie herauszufinden, welche zwei Varianten das sind.</p>\n"
 "            "
 
-#: ../Perceptron.py:480
+#: ../Perceptron.py:489
 msgid ""
 "\n"
 "            <h2>Resource consumption in machine learning</h2>\n"
@@ -753,7 +751,7 @@ msgstr ""
 "Parametern so lange braucht und so enorm viel Ressourcen verbraucht.</p>\n"
 "            "
 
-#: ../Perceptron.py:496
+#: ../Perceptron.py:505
 msgid ""
 "\n"
 "            <h1>Inference</h1>\n"
@@ -779,23 +777,23 @@ msgstr ""
 "            </ol>\n"
 "            "
 
-#: ../Perceptron.py:553
+#: ../Perceptron.py:571
 msgid "Start (set random weights))"
 msgstr "Start (zufällige Gewichtungen setzen)"
 
-#: ../Perceptron.py:558
+#: ../Perceptron.py:576
 msgid "Continue (get random input)"
 msgstr "Weiter (zufälligen Input holen)"
 
-#: ../Perceptron.py:560
+#: ../Perceptron.py:578
 msgid "Continue (calculate result)"
 msgstr "Weiter (Ausgabe berechnen)"
 
-#: ../Perceptron.py:562
+#: ../Perceptron.py:580
 msgid "Continue (adopt weights)"
 msgstr "Weiter (Gewichtungen anpassen)"
 
-#: ../Perceptron.py:609 ../Perceptron.py:757
+#: ../Perceptron.py:627 ../Perceptron.py:775
 msgid "Epoch: "
 msgstr "Epoche: "
 
