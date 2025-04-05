@@ -18,7 +18,7 @@ WEIGHT_1_COLUMN = "$w_1$"
 WEIGHT_2_COLUMN = "$w_2$"
 TARGET_COLUMN = "$t$"
 OUTPUT_COLUMN = "$o$"
-DELTA_COLUMN = "$\delta$"
+DELTA_COLUMN = r"$\delta$"
 
 
 class Perceptron:
@@ -146,9 +146,9 @@ class Perceptron:
             """) +
             _("<h2>Example</h2>") +
             _("""
-            <p>In our example, there should be exactly two inputs, each of which
-            can only accept truth values (i.e. "true" or "false"). The two
-            inputs are:
+            <p>In our example, there should be exactly two inputs, each of
+            which can only accept truth values (i.e. "true" or "false"). The
+            two inputs are:
             <ul>
                 <li>It is weekend.</li>
                 <li>Parents come to visit.</li>
@@ -207,7 +207,8 @@ class Perceptron:
         theory6 = widgets.HTML(
             _("""
             <p>But how do you find the right values in a targeted and efficient
-            way? Or to put it another way: How does an artificial neuron "learn"?</p>
+            way? Or to put it another way: How does an artificial neuron
+            "learn"?</p>
             """) +
             _("""
             <p>The learning process for an artificial neuron could look like
